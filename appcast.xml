@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>VoiceFlow Updates</title>
-    <link>https://stanleyswiss.github.io/VoiceFlow/appcast.xml</link>
+    <link>https://stanleyswiss.github.io/voiceflow-updates/appcast.xml</link>
     <description>VoiceFlow update feed</description>
     <language>en</language>
     <item>
@@ -21,10 +21,10 @@
       ]]></description>
       <pubDate>Thu, 27 Mar 2026 12:00:00 +0000</pubDate>
       <enclosure
-        url="https://stanleyswiss.github.io/VoiceFlow/VoiceFlow.dmg"
-        length="5242880"
+        url="https://stanleyswiss.github.io/voiceflow-updates/VoiceFlow.dmg"
+        length="6514435"
         type="application/octet-stream"
-        sparkle:edSignature="REPLACE_WITH_SIGNATURE"
+        sparkle:edSignature="Hllnu7GpkOmmMVyeotf1y3UD8iVJx3unnnH9fX/HFX4rWk4Il3VunqOPsQiO6XpjTpzgjAtgW/TLw2r5r9XWCQ=="
       />
     </item>
   </channel>
