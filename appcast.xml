@@ -6,6 +6,29 @@
     <description>VoiceFlow update feed</description>
     <language>en</language>
     <item>
+      <title>Version 1.8</title>
+      <sparkle:version>9</sparkle:version>
+      <sparkle:shortVersionString>1.8</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>What's New in VoiceFlow 1.8</h2>
+        <ul>
+          <li>VoiceFlow Pro — freemium with 7-day trial, $9.99 one-time purchase</li>
+          <li>6 AI providers — OpenAI, Groq, Gemini, OpenRouter, Ollama, Ollama Cloud</li>
+          <li>Redesigned Settings with sidebar navigation</li>
+          <li>License management — activate, deactivate, 3-device limit</li>
+          <li>Security hardening — Keychain encryption, sanitized logging</li>
+        </ul>
+      ]]></description>
+      <pubDate>Thu, 27 Mar 2026 18:00:00 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/VoiceFlow.dmg"
+        length="REPLACE_AFTER_SIGNING"
+        type="application/octet-stream"
+        sparkle:edSignature="REPLACE_AFTER_SIGNING"
+      />
+    </item>
+    <item>
       <title>Version 1.7</title>
       <sparkle:version>8</sparkle:version>
       <sparkle:shortVersionString>1.7</sparkle:shortVersionString>
@@ -13,6 +36,7 @@
       <description><![CDATA[
         <h2>What's New in VoiceFlow 1.7</h2>
         <ul>
+          <li>Automatic updates via Sparkle</li>
           <li>Multilingual dictation with 4 speech engines</li>
           <li>OpenAI Realtime streaming transcription</li>
           <li>Per-app profiles with contact detection</li>
@@ -21,7 +45,7 @@
       ]]></description>
       <pubDate>Thu, 27 Mar 2026 12:00:00 +0000</pubDate>
       <enclosure
-        url="https://stanleyswiss.github.io/voiceflow-updates/VoiceFlow.dmg"
+        url="https://stanleyswiss.github.io/voiceflow-updates/VoiceFlow-1.7.dmg"
         length="6514435"
         type="application/octet-stream"
         sparkle:edSignature="Hllnu7GpkOmmMVyeotf1y3UD8iVJx3unnnH9fX/HFX4rWk4Il3VunqOPsQiO6XpjTpzgjAtgW/TLw2r5r9XWCQ=="
