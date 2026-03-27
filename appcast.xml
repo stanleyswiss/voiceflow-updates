@@ -6,6 +6,27 @@
     <description>VoiceFlow update feed</description>
     <language>en</language>
     <item>
+      <title>Version 1.9</title>
+      <sparkle:version>10</sparkle:version>
+      <sparkle:shortVersionString>1.9</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>What's New in VoiceFlow 1.9</h2>
+        <ul>
+          <li>Deepgram Nova-3 — 5th speech engine, WebSocket streaming, half the price of OpenAI</li>
+          <li>10 languages with real-time code-switching</li>
+          <li>Fixed Gemini provider — updated to 2.5 Flash/Pro</li>
+        </ul>
+      ]]></description>
+      <pubDate>Thu, 27 Mar 2026 22:00:00 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/VoiceFlow.dmg"
+        length="6710525"
+        type="application/octet-stream"
+        sparkle:edSignature="pXszvGfshKbEzqdGPbF/HwhfiOUfp3wEqer8L5u9JNP5BIQTdf0TkxIcB2Lxfsn7ZL7UgSneMVNKVHpPvowIBw=="
+      />
+    </item>
+    <item>
       <title>Version 1.8</title>
       <sparkle:version>9</sparkle:version>
       <sparkle:shortVersionString>1.8</sparkle:shortVersionString>
@@ -22,33 +43,10 @@
       ]]></description>
       <pubDate>Thu, 27 Mar 2026 18:00:00 +0000</pubDate>
       <enclosure
-        url="https://stanleyswiss.github.io/voiceflow-updates/VoiceFlow.dmg"
+        url="https://stanleyswiss.github.io/voiceflow-updates/VoiceFlow-1.8.dmg"
         length="6677601"
         type="application/octet-stream"
         sparkle:edSignature="IvN/fO22gIPTAF5Rd/kDxF/1f4Ku/UwuWS2fQzkafxbYDrwpgFWPkAUL6HXxMlzmSKEiUukeuJriMHsP4IpSCQ=="
-      />
-    </item>
-    <item>
-      <title>Version 1.7</title>
-      <sparkle:version>8</sparkle:version>
-      <sparkle:shortVersionString>1.7</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[
-        <h2>What's New in VoiceFlow 1.7</h2>
-        <ul>
-          <li>Automatic updates via Sparkle</li>
-          <li>Multilingual dictation with 4 speech engines</li>
-          <li>OpenAI Realtime streaming transcription</li>
-          <li>Per-app profiles with contact detection</li>
-          <li>Hold-to-talk dictation mode</li>
-        </ul>
-      ]]></description>
-      <pubDate>Thu, 27 Mar 2026 12:00:00 +0000</pubDate>
-      <enclosure
-        url="https://stanleyswiss.github.io/voiceflow-updates/VoiceFlow-1.7.dmg"
-        length="6514435"
-        type="application/octet-stream"
-        sparkle:edSignature="Hllnu7GpkOmmMVyeotf1y3UD8iVJx3unnnH9fX/HFX4rWk4Il3VunqOPsQiO6XpjTpzgjAtgW/TLw2r5r9XWCQ=="
       />
     </item>
   </channel>
