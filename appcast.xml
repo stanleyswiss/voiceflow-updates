@@ -6,6 +6,25 @@
     <description>VoiceFlow update feed</description>
     <language>en</language>
     <item>
+      <title>Version 2.2.1</title>
+      <sparkle:version>14</sparkle:version>
+      <sparkle:shortVersionString>2.2.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>What's New in VoiceFlow 2.2.1</h2>
+        <ul>
+          <li>Fixed clipboard keeping raw text instead of AI-translated result</li>
+        </ul>
+      ]]></description>
+      <pubDate>Thu, 03 Apr 2026 19:30:00 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/VoiceFlow.dmg"
+        length="6332972"
+        type="application/octet-stream"
+        sparkle:edSignature="pfsvMyt1yV0qvqb36y8b969vzr+qzOjTor/+9y4MV5rlrBCy2uGMThNsR4fLISi8XBZ3IwMUgSFRJN4Xq4zYAg=="
+      />
+    </item>
+    <item>
       <title>Version 2.2</title>
       <sparkle:version>13</sparkle:version>
       <sparkle:shortVersionString>2.2</sparkle:shortVersionString>
