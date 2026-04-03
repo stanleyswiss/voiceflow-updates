@@ -6,6 +6,27 @@
     <description>VoiceFlow update feed</description>
     <language>en</language>
     <item>
+      <title>Version 2.1</title>
+      <sparkle:version>12</sparkle:version>
+      <sparkle:shortVersionString>2.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>What's New in VoiceFlow 2.1</h2>
+        <ul>
+          <li>Single-key shortcuts — use F-keys or Logitech dedicated buttons as dictation trigger</li>
+          <li>Fixed Globe key crash on some keyboard configurations</li>
+          <li>FaceTime/Zoom mic sharing — dictate while on a call</li>
+        </ul>
+      ]]></description>
+      <pubDate>Thu, 03 Apr 2026 12:00:00 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/VoiceFlow.dmg"
+        length="6323526"
+        type="application/octet-stream"
+        sparkle:edSignature="u4rHZmeAKpB+iSPn4gtCS3IMB81yxhiEuvQhsjEHcRPZBz8mf/PMSE0p8B+40LZY69FTYAF68ZxPrhhDMDTHBQ=="
+      />
+    </item>
+    <item>
       <title>Version 2.0</title>
       <sparkle:version>11</sparkle:version>
       <sparkle:shortVersionString>2.0</sparkle:shortVersionString>
@@ -19,7 +40,7 @@
       ]]></description>
       <pubDate>Thu, 03 Apr 2026 10:00:00 +0000</pubDate>
       <enclosure
-        url="https://stanleyswiss.github.io/voiceflow-updates/VoiceFlow.dmg"
+        url="https://stanleyswiss.github.io/voiceflow-updates/VoiceFlow-2.0.dmg"
         length="6319831"
         type="application/octet-stream"
         sparkle:edSignature="j7Igi/gkJapcdQ2g/BI4clSTjOq2JG2yoFN8wZINOgEkXjN/v3Voe7YriI7aLlX+bH1ON7yWaKMv+e/NTShSCg=="
