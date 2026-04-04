@@ -6,6 +6,28 @@
     <description>VoiceFlow update feed</description>
     <language>en</language>
     <item>
+      <title>Version 2.3</title>
+      <sparkle:version>15</sparkle:version>
+      <sparkle:shortVersionString>2.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>What's New in VoiceFlow 2.3</h2>
+        <ul>
+          <li>AI Enhancement Presets — 8 built-in prompts (Clean & Correct, Professional, Bullet Points, Summary, and more) per profile</li>
+          <li>Microphone selection — choose which input device to use in Engine settings</li>
+          <li>Automatic transcription cleanup — silently strips noise artifacts like [Music], [silence], and other non-speech markers</li>
+          <li>Faster update checks — now checks for updates every 12 hours instead of 24</li>
+        </ul>
+      ]]></description>
+      <pubDate>Fri, 04 Apr 2026 08:40:00 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/VoiceFlow.dmg"
+        length="6343822"
+        type="application/octet-stream"
+        sparkle:edSignature="VHDu/h9m1mF/aeyYHaIN55mXXwNAImCqQ78lj3h0tKY8CR3/17dad7K1PV4db/NsHxHVSh8ihPUDffkuyZHRCQ=="
+      />
+    </item>
+    <item>
       <title>Version 2.2.1</title>
       <sparkle:version>14</sparkle:version>
       <sparkle:shortVersionString>2.2.1</sparkle:shortVersionString>
