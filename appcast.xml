@@ -6,27 +6,25 @@
     <description>VoiceFlow update feed</description>
     <language>en</language>
     <item>
-      <title>Version 3.0.1</title>
-      <sparkle:version>17</sparkle:version>
-      <sparkle:shortVersionString>3.0.1</sparkle:shortVersionString>
+      <title>Version 3.1</title>
+      <sparkle:version>18</sparkle:version>
+      <sparkle:shortVersionString>3.1</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-        <h2>What's New in VoiceFlow 3.0</h2>
+        <h2>What's New in VoiceFlow 3.1</h2>
         <ul>
+          <li>Dock icon — VoiceFlow now shows in the Dock for easy access. Click to open Settings. Toggle off in Settings &rarr; General to go menu bar only.</li>
+          <li>Redesigned dictation overlay — purple waveform, live transcription text, profile badge, and green checkmark delivery confirmation</li>
           <li>VoiceFlow AI &amp; Cloud subscriptions — zero-config managed AI and cloud transcription, no API keys needed</li>
-          <li>8 AI enhancement presets per profile — Clean &amp; Correct, Professional, Bullet Points, Summary, Key Takeaways, Q&amp;A, Action Items</li>
-          <li>Microphone selection — choose your input device in Engine settings</li>
-          <li>Dictation statistics — track words spoken, time saved, sessions, and AI usage</li>
-          <li>Automatic transcription cleanup — strips noise artifacts from all engines</li>
-          <li>Faster update checks every 12 hours</li>
+          <li>8 AI enhancement presets, microphone selection, dictation stats, transcription cleanup</li>
         </ul>
       ]]></description>
-      <pubDate>Fri, 04 Apr 2026 11:25:00 +0000</pubDate>
+      <pubDate>Fri, 04 Apr 2026 17:00:00 +0000</pubDate>
       <enclosure
         url="https://stanleyswiss.github.io/voiceflow-updates/VoiceFlow.dmg"
-        length="6433188"
+        length="6455174"
         type="application/octet-stream"
-        sparkle:edSignature="sBlxRmzKwIVjpVmORTmYuZ3XK1lAuagqaqEXQ7lUYuY6eSq+spbkpA5hES9iHScVZV0lWgxDae+EB3MdQeLODw=="
+        sparkle:edSignature="S9NiaHF1xjssZJkKxbdHkM7GT5JVssHXuTSBDMKCbfprDEVrULqplFjgojhXghJfM+/684LitWrsv1UM8WqdCQ=="
       />
     </item>
     <item>
