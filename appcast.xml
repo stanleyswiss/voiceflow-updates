@@ -6,9 +6,9 @@
     <description>VoiceFlow update feed</description>
     <language>en</language>
     <item>
-      <title>Version 3.0</title>
-      <sparkle:version>16</sparkle:version>
-      <sparkle:shortVersionString>3.0</sparkle:shortVersionString>
+      <title>Version 3.0.1</title>
+      <sparkle:version>17</sparkle:version>
+      <sparkle:shortVersionString>3.0.1</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
         <h2>What's New in VoiceFlow 3.0</h2>
@@ -21,12 +21,12 @@
           <li>Faster update checks every 12 hours</li>
         </ul>
       ]]></description>
-      <pubDate>Fri, 04 Apr 2026 10:00:00 +0000</pubDate>
+      <pubDate>Fri, 04 Apr 2026 11:25:00 +0000</pubDate>
       <enclosure
         url="https://stanleyswiss.github.io/voiceflow-updates/VoiceFlow.dmg"
-        length="6433264"
+        length="6433188"
         type="application/octet-stream"
-        sparkle:edSignature="VI+kWHl85PUJ7jhp9fqJPNgEG/++ouvuOe+5bvpJO26+uMo+e9RHusJSKisonUvvTeEx0trVg1iEe1nI8FR0Aw=="
+        sparkle:edSignature="sBlxRmzKwIVjpVmORTmYuZ3XK1lAuagqaqEXQ7lUYuY6eSq+spbkpA5hES9iHScVZV0lWgxDae+EB3MdQeLODw=="
       />
     </item>
     <item>
