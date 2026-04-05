@@ -1,30 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>VoiceFlow Updates</title>
+    <title>Sonotexta Updates</title>
     <link>https://stanleyswiss.github.io/voiceflow-updates/appcast.xml</link>
-    <description>VoiceFlow update feed</description>
+    <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
-      <title>Version 3.1</title>
-      <sparkle:version>18</sparkle:version>
-      <sparkle:shortVersionString>3.1</sparkle:shortVersionString>
+      <title>Version 3.2</title>
+      <sparkle:version>19</sparkle:version>
+      <sparkle:shortVersionString>3.2</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-        <h2>What's New in VoiceFlow 3.1</h2>
+        <h2>Sonotexta 3.2</h2>
         <ul>
-          <li>Dock icon — VoiceFlow now shows in the Dock for easy access. Click to open Settings. Toggle off in Settings &rarr; General to go menu bar only.</li>
-          <li>Redesigned dictation overlay — purple waveform, live transcription text, profile badge, and green checkmark delivery confirmation</li>
-          <li>VoiceFlow AI &amp; Cloud subscriptions — zero-config managed AI and cloud transcription, no API keys needed</li>
-          <li>8 AI enhancement presets, microphone selection, dictation stats, transcription cleanup</li>
+          <li>Rebranded to Sonotexta &mdash; new name, same great dictation</li>
+          <li>Dock icon, redesigned overlay, AI &amp; Cloud subscriptions</li>
+          <li>8 AI enhancement presets, microphone selection, dictation stats</li>
         </ul>
       ]]></description>
-      <pubDate>Fri, 04 Apr 2026 17:00:00 +0000</pubDate>
+      <pubDate>Sat, 05 Apr 2026 12:00:00 +0000</pubDate>
       <enclosure
         url="https://stanleyswiss.github.io/voiceflow-updates/VoiceFlow.dmg"
-        length="6455174"
+        length="6455555"
         type="application/octet-stream"
-        sparkle:edSignature="S9NiaHF1xjssZJkKxbdHkM7GT5JVssHXuTSBDMKCbfprDEVrULqplFjgojhXghJfM+/684LitWrsv1UM8WqdCQ=="
+        sparkle:edSignature="b0zUfVY5S6oLxwHtPjdM3xocLSXnIYIxqasV5LIe9loprwfJVIfMaMqWDJKnKXLhWwvJ/2VKpSrpkELIDE/nAA=="
       />
     </item>
     <item>
@@ -33,7 +32,7 @@
       <sparkle:shortVersionString>2.2.1</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-        <h2>What's New in VoiceFlow 2.2.1</h2>
+        <h2>What's New in Sonotexta 2.2.1</h2>
         <ul>
           <li>Fixed clipboard keeping raw text instead of AI-translated result</li>
         </ul>
@@ -52,7 +51,7 @@
       <sparkle:shortVersionString>2.2</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-        <h2>What's New in VoiceFlow 2.2</h2>
+        <h2>What's New in Sonotexta 2.2</h2>
         <ul>
           <li>Keep in clipboard — optionally keep transcription in clipboard for re-pasting</li>
           <li>Configurable paste delay for VMs and remote desktop apps</li>
@@ -72,7 +71,7 @@
       <sparkle:shortVersionString>2.1</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-        <h2>What's New in VoiceFlow 2.1</h2>
+        <h2>What's New in Sonotexta 2.1</h2>
         <ul>
           <li>Single-key shortcuts — use F-keys or Logitech dedicated buttons as dictation trigger</li>
           <li>Fixed Globe key crash on some keyboard configurations</li>
@@ -93,9 +92,9 @@
       <sparkle:shortVersionString>2.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-        <h2>What's New in VoiceFlow 2.0</h2>
+        <h2>What's New in Sonotexta 2.0</h2>
         <ul>
-          <li>VoiceFlow Pro store live — production Lemon Squeezy checkout</li>
+          <li>Sonotexta Pro store live — production Lemon Squeezy checkout</li>
           <li>Buy button on website with overlay purchase flow</li>
         </ul>
       ]]></description>
@@ -113,7 +112,7 @@
       <sparkle:shortVersionString>1.9</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-        <h2>What's New in VoiceFlow 1.9</h2>
+        <h2>What's New in Sonotexta 1.9</h2>
         <ul>
           <li>Deepgram Nova-3 — 5th speech engine, WebSocket streaming, half the price of OpenAI</li>
           <li>10 languages with real-time code-switching</li>
@@ -134,7 +133,7 @@
       <sparkle:shortVersionString>1.7</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-        <h2>What's New in VoiceFlow 1.7</h2>
+        <h2>What's New in Sonotexta 1.7</h2>
         <ul>
           <li>Automatic updates via Sparkle</li>
           <li>Multilingual dictation with 4 speech engines</li>
