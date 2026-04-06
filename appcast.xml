@@ -6,14 +6,14 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
-      <title>Version 3.2.3</title>
-      <sparkle:version>22</sparkle:version>
-      <sparkle:shortVersionString>3.2.3</sparkle:shortVersionString>
+      <title>Version 3.2.4</title>
+      <sparkle:version>23</sparkle:version>
+      <sparkle:shortVersionString>3.2.4</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-        <h2>Sonotexta 3.2.3</h2>
+        <h2>Sonotexta 3.2.4</h2>
         <ul>
-          <li>Rebranded to Sonotexta, Support info panel, fix AI treating dictation as instructions &mdash; new name, same great dictation</li>
+          <li>Rebranded to Sonotexta, Support info panel, clearer AI + language requirements in profile settings &mdash; new name, same great dictation</li>
           <li>Dock icon, redesigned overlay, AI &amp; Cloud subscriptions</li>
           <li>8 AI enhancement presets, microphone selection, dictation stats</li>
         </ul>
@@ -21,9 +21,9 @@
       <pubDate>Sat, 05 Apr 2026 13:00:00 +0000</pubDate>
       <enclosure
         url="https://stanleyswiss.github.io/voiceflow-updates/VoiceFlow.dmg"
-        length="6484973"
+        length="6482322"
         type="application/octet-stream"
-        sparkle:edSignature="t1Lz97SomarkNgDsPjx2BKlmbdbvqbNnJM2/cGijDiuZG/V2HvEiy2KUoOaikgx84J9lqJMlteKNdRvtGBMoBQ=="
+        sparkle:edSignature="YfS9ojR3tZszcWzux24M6QaDiqQtSiFKUzNhgCLKutQWtBW1GbYESEFpvkPl6O4CxnH/1bK0HFhuczpF9i1sDA=="
       />
     </item>
     <item>
