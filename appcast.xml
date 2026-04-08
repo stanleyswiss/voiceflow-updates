@@ -13,14 +13,15 @@
       <description><![CDATA[
         <h2>Sonotexta 3.5</h2>
         <ul>
-          <li><strong>Updates tab</strong> &mdash; see release history and check for new versions from Settings</li>
+          <li><strong>Input language per profile</strong> &mdash; tell the speech engine and AI what language you&rsquo;re speaking for better accuracy on short phrases and similar languages</li>
+          <li><strong>Improved FaceTime/Zoom mic sharing</strong> &mdash; voice processing API for reliable concurrent mic access</li>
+          <li><strong>Updates tab</strong> &mdash; release history and check for updates from Settings</li>
+          <li><strong>Support page</strong> &mdash; privacy, terms, website, and contact links in Settings</li>
           <li><strong>Fixed</strong>: dictation now stops reliably with local engines (Whisper, Parakeet)</li>
           <li><strong>Fixed</strong>: AI no longer interprets your dictation as instructions</li>
           <li><strong>Fixed</strong>: duplicate default profiles can now be deleted</li>
-          <li><strong>Support page</strong> in Settings with privacy policy, terms, and contact links</li>
-          <li><strong>Clearer AI setup</strong> &mdash; warnings when no provider configured, Ollama highlighted as free option</li>
-          <li>Sonotexta AI ($7.99/mo) and Cloud ($14.99/mo) subscriptions &mdash; zero-config, no API keys</li>
-          <li>8 AI enhancement presets, microphone selection, dictation stats, redesigned overlay</li>
+          <li><strong>Clearer AI setup</strong> &mdash; Ollama highlighted as free local option</li>
+          <li>Sonotexta AI and Cloud subscriptions, 8 AI presets, microphone selection, dictation stats</li>
         </ul>
       ]]></description>
       <pubDate>Sat, 05 Apr 2026 13:00:00 +0000</pubDate>
