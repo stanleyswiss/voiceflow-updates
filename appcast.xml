@@ -6,6 +6,25 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.7.1</title>
+      <sparkle:version>32</sparkle:version>
+      <sparkle:shortVersionString>3.7.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.7.1 &mdash; Hotfix for paste regression</h2>
+        <ul>
+          <li><strong>Fixed</strong>: in 3.7, transcribed text could end up on the clipboard without actually pasting into the focused app (especially in Terminal, iTerm, and Electron-based apps like VS Code or Claude Code). The new direct-insertion attempt was reporting success while doing nothing visible. Reverted to clipboard paste as the primary delivery path &mdash; matches 3.6 behavior. All other 3.7 improvements (durable last-dictation store, menu bar recovery actions, honest delivery status, safer clipboard restore, Apple Speech finalization fix, realtime engine race fix) remain in place.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Wed, 06 May 2026 15:11:02 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/VoiceFlow.dmg"
+        length="6950070"
+        type="application/octet-stream"
+        sparkle:edSignature="QfaNs0VENPEg22LQLXYOcF6lsr/QuzNOaRDEegGZUD3k/oV8vf91zjlxjyR02NihPQpH+7cjHdKWDNMqj8U5DQ=="
+      />
+    </item>
+    <item>
       <title>Version 3.7</title>
       <sparkle:version>31</sparkle:version>
       <sparkle:shortVersionString>3.7</sparkle:shortVersionString>
