@@ -6,6 +6,35 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.7</title>
+      <sparkle:version>31</sparkle:version>
+      <sparkle:shortVersionString>3.7</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.7 &mdash; Delivery reliability + engine race fix</h2>
+        <h3>You never lose a transcription again</h3>
+        <ul>
+          <li><strong>Last Dictation recovery</strong> &mdash; every transcription is now saved durably. New menu bar items: <em>Paste Last Dictation</em> (⌃⇧V), <em>Copy Last Dictation</em> (⌃⇧C), <em>Show Last Dictation</em></li>
+          <li><strong>Honest delivery status</strong> &mdash; the overlay no longer says &ldquo;Delivered&rdquo; when paste might have silently failed. You&rsquo;ll see <em>Copied &mdash; paste manually</em> when delivery isn&rsquo;t certain</li>
+          <li><strong>Layered insertion</strong> &mdash; tries direct Accessibility insertion first, falls back to clipboard paste, falls back to leave-in-clipboard. More reliable across apps with Secure Input or restricted text fields</li>
+          <li><strong>Safer clipboard restore</strong> &mdash; we no longer overwrite your clipboard with stale content if you copied something else right after dictating</li>
+        </ul>
+        <h3>Engine race fix</h3>
+        <ul>
+          <li><strong>Fixed</strong>: short utterances with Apple Speech sometimes lost the final transcription &mdash; replaced abort with proper end-of-audio + finalization wait</li>
+          <li><strong>Fixed</strong>: realtime engines (OpenAI Realtime, Deepgram) could deliver an empty buffer if the final event arrived a fraction of a second late on stop. Engines now return the final text directly, eliminating the race</li>
+          <li><strong>Cleaner internals</strong> &mdash; each engine now owns its own transcript accumulator, removing duplicated state in the dictation manager</li>
+        </ul>
+      ]]></description>
+      <pubDate>Wed, 06 May 2026 14:58:12 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/VoiceFlow.dmg"
+        length="6954539"
+        type="application/octet-stream"
+        sparkle:edSignature="Gb+EqFT8Wxi8lYZYfOjiCYilo7oMuYiWpZlbjU7DZyietR4KQnrYtC/tTOnSuvY2JKQezA/v+1f95sOf6S1zAA=="
+      />
+    </item>
+    <item>
       <title>Version 3.6</title>
       <sparkle:version>30</sparkle:version>
       <sparkle:shortVersionString>3.6</sparkle:shortVersionString>
