@@ -6,6 +6,26 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.8.3</title>
+      <sparkle:version>38</sparkle:version>
+      <sparkle:shortVersionString>3.8.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.8.3 &mdash; GPT-5 models work + in-app updates really fixed</h2>
+        <ul>
+          <li><strong>Fixed: GPT-5 family models returned API error 400.</strong> The 3.8.1 picker added <code>gpt-5-nano</code>/<code>gpt-5-mini</code>/<code>gpt-5</code> but they all rejected the request body. GPT-5 family and o-series reasoning models don't accept the legacy <code>temperature</code> and <code>max_tokens</code> parameters &mdash; they require <code>max_completion_tokens</code> and only the default temperature. The request shape now switches per model so all picker options work.</li>
+          <li><strong>Fixed (really): Settings &rarr; Updates &rarr; Check for Updates button.</strong> 3.8.2 corrected the API call but missed the activation step. Sonotexta is a menu-bar app and the Settings window lives in a non-main window, so Sparkle's alert was appearing behind it &mdash; visually identical to "nothing happens". Now the app activates before the check, so the alert surfaces on top.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Thu, 07 May 2026 14:17:10 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.8.3.dmg"
+        length="6985836"
+        type="application/octet-stream"
+        sparkle:edSignature="WcsdNj9vC5dFywfgTPZc421fyFEFIkzh73D7vP0kd+6YXZCmeBlrS2bIMaXN4cECz8f2VKohnyg7Kln75IOBAg=="
+      />
+    </item>
+    <item>
       <title>Version 3.8.2</title>
       <sparkle:version>37</sparkle:version>
       <sparkle:shortVersionString>3.8.2</sparkle:shortVersionString>
