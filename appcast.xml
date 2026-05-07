@@ -6,6 +6,26 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.8</title>
+      <sparkle:version>35</sparkle:version>
+      <sparkle:shortVersionString>3.8</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.8 &mdash; Brand-aligned downloads</h2>
+        <ul>
+          <li><strong>Download files now match the product name.</strong> Each release ships as <code>Sonotexta-X.Y.Z.dmg</code> instead of the legacy <code>VoiceFlow.dmg</code>. Cosmetic, but also fixes a real propagation issue: when several versions ship close together, the same generic filename could leave some users' Sparkle stuck on an intermediate version because their CDN edge had cached a stale combination. Each version now has its own unique download URL, so cache contamination is impossible.</li>
+          <li>No functional changes &mdash; same app, just a cleaner filename and more reliable update propagation.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Thu, 07 May 2026 13:37:09 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.8.dmg"
+        length="6988947"
+        type="application/octet-stream"
+        sparkle:edSignature="sCQbeEJihzGxxFqkLfVju7WL6p3DvFYsoSw9XCShqnLRYr0kEg/+HCYsi/xfptsbI4t5VLh/7WGnoVNGxj/MCg=="
+      />
+    </item>
+    <item>
       <title>Version 3.7.3</title>
       <sparkle:version>34</sparkle:version>
       <sparkle:shortVersionString>3.7.3</sparkle:shortVersionString>
