@@ -6,6 +6,27 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.8.2</title>
+      <sparkle:version>37</sparkle:version>
+      <sparkle:shortVersionString>3.8.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.8.2 &mdash; In-app updates fixed + release history refresh</h2>
+        <ul>
+          <li><strong>Fixed: Settings &rarr; Updates &rarr; Check for Updates button.</strong> It was silently doing nothing &mdash; only the menu bar's <em>Check for Updates&hellip;</em> worked. Both paths now show the standard Sparkle update panel.</li>
+          <li><strong>In-app release history is current.</strong> Was showing old hardcoded entries (and even a phantom v3.2.5 that never existed). Now lists 3.6 through this release, matching the website and the auto-update feed.</li>
+          <li>Removed the misleading "You're on the latest version" static text &mdash; the app couldn't actually verify that without checking. The version + build are still shown; <em>Check for Updates</em> does the real verification.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Thu, 07 May 2026 14:02:46 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.8.2.dmg"
+        length="6985809"
+        type="application/octet-stream"
+        sparkle:edSignature="HMram0MN0yon2Mkb6ViVxGR6OJ7tzUM4+eH55406QcWgxH183+U0Sn/4vNWtoj0xFpb2V6vWF7PNAHnYrIWSCQ=="
+      />
+    </item>
+    <item>
       <title>Version 3.8.1</title>
       <sparkle:version>36</sparkle:version>
       <sparkle:shortVersionString>3.8.1</sparkle:shortVersionString>
