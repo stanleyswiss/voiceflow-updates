@@ -6,6 +6,26 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.7.3</title>
+      <sparkle:version>34</sparkle:version>
+      <sparkle:shortVersionString>3.7.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.7.3 &mdash; Multiple contacts per app in one profile</h2>
+        <ul>
+          <li><strong>One profile, many contacts.</strong> You can now attach as many specific contacts as you like to a single profile within the same app &mdash; no more creating ten near-identical profiles for ten different colleagues. Each app card now has an <em>Add another contact</em> button, so a single "Work English" profile can match Filip, Markus, and Andreas in Teams (and the same colleagues in Slack, if you add them there too).</li>
+          <li>The profile list now shows all apps a profile targets in its subtitle, not just the first one.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Thu, 07 May 2026 08:06:54 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/VoiceFlow.dmg"
+        length="6988921"
+        type="application/octet-stream"
+        sparkle:edSignature="+zPaBQdQgXBVampscGw2Urp+HNJSpy/kCtSY4+AeBrSzzSI18Uy12wY9Qoc0PkE8VKxhOQFGHSOZYU2B3RRTCQ=="
+      />
+    </item>
+    <item>
       <title>Version 3.7.2</title>
       <sparkle:version>33</sparkle:version>
       <sparkle:shortVersionString>3.7.2</sparkle:shortVersionString>
