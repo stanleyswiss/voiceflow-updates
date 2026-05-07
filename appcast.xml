@@ -6,6 +6,25 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.7.2</title>
+      <sparkle:version>33</sparkle:version>
+      <sparkle:shortVersionString>3.7.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.7.2 &mdash; Smarter profile matching</h2>
+        <ul>
+          <li><strong>Contact-specific profiles now beat app-wide profiles automatically.</strong> Before, if you had a "Teams &rarr; German" profile and added a "Filip in Teams &rarr; English" profile later, Filip's messages still came out in German because the matcher used profile order. Now the matcher checks specificity: a profile that targets a specific contact in an app always wins over a profile that targets the whole app, regardless of when each was added. You can keep adding contact-specific profiles without manually reordering.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Thu, 07 May 2026 07:51:19 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/VoiceFlow.dmg"
+        length="6951737"
+        type="application/octet-stream"
+        sparkle:edSignature="Bk98L8icKd284sNHuCK+TgMzNB1zTFxK/lKIDq6BZffjGEfJcoucvypu9qg+YQKVbP87wYVy1/8oOxbPdW/hCw=="
+      />
+    </item>
+    <item>
       <title>Version 3.7.1</title>
       <sparkle:version>32</sparkle:version>
       <sparkle:shortVersionString>3.7.1</sparkle:shortVersionString>
