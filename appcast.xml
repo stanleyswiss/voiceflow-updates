@@ -6,6 +6,28 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.9.0</title>
+      <sparkle:version>39</sparkle:version>
+      <sparkle:shortVersionString>3.9.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.9.0 &mdash; Custom presets, smarter app selector, faster GPT-5, in-app updates fixed</h2>
+        <ul>
+          <li><strong>Custom AI presets &mdash; create as many as you want, name them yourself.</strong> Instead of a single "Custom..." slot, the AI preset picker now has a "Your Custom Presets" section where you can save reusable named prompts ("Email tone", "Slack casual", "Bullet points punchy", etc.). The same preset can be selected across multiple profiles &mdash; edit once, applies everywhere it's used. A "+ New custom preset…" option in the picker opens an editor sheet with name + prompt + Save/Delete. Existing custom prompts are migrated automatically.</li>
+          <li><strong>App selector now finds anything you have open.</strong> Previously the App dropdown only listed a hardcoded set of common apps. Now it includes every currently running user-visible app (so Obsidian, Linear, Notion, anything open right now is selectable directly) plus a folder-icon button that opens the Applications folder so you can pick any installed app, running or not.</li>
+          <li><strong>GPT-5 family now runs at minimal reasoning effort.</strong> For dictation cleanup the task is short and structural &mdash; no internal reasoning needed. Result: noticeably faster responses and lower cost for the same output quality.</li>
+          <li><strong>Settings &rarr; Updates &rarr; Check for Updates button: third attempt, different shape.</strong> Refactored the updater into a shared singleton accessed identically by the menu bar and the in-app button (no more NSApp.delegate cast). Uses Sparkle's official SwiftUI integration pattern with observed state. Shows on-screen status after a check &mdash; if for any reason no Sparkle alert appears, the status line confirms the click fired.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Thu, 07 May 2026 14:49:29 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.9.0.dmg"
+        length="7049974"
+        type="application/octet-stream"
+        sparkle:edSignature="DRtQ4dL9vEyfd2t/zLLS2xIMOGcEnES5RUxGgq4IsDm9u4Wto3/0J8bHy+bWVpnCr61PCSbiKME3ocPMZOpNCg=="
+      />
+    </item>
+    <item>
       <title>Version 3.8.3</title>
       <sparkle:version>38</sparkle:version>
       <sparkle:shortVersionString>3.8.3</sparkle:shortVersionString>
