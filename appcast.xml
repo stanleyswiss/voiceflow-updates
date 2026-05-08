@@ -6,6 +6,27 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.10.4</title>
+      <sparkle:version>44</sparkle:version>
+      <sparkle:shortVersionString>3.10.4</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.10.4 &mdash; Native translation actually waits for the translation to finish</h2>
+        <ul>
+          <li><strong>Fixed: trailing words still cropped on the translate path even after 3.10.3.</strong> The previous fix drained our local audio queue before the server commit (correct) but the post-commit wait was naive: it exited after 500ms of &ldquo;no new server event,&rdquo; which can fire DURING the model&rsquo;s pre-response gap &mdash; before any translated text has even started arriving. Translation then exited before it began.</li>
+          <li><strong>Two-phase wait now:</strong> (1) wait up to 1.5s for the server&rsquo;s first response after stop &mdash; if nothing arrives, the server really has nothing more to say; (2) once streaming has begun, wait for it to actually go quiet (800ms after the last delta) OR for an explicit completion event. Hard cap at 8s for genuinely stuck cases. The translated text you see streaming live in the pill IS what gets pasted &mdash; nothing trailing gets dropped anymore.</li>
+          <li>Same-language English-to-English on Mini Transcribe / Transcribe is unchanged &mdash; this only affects the &ldquo;Translate live via OpenAI Realtime&rdquo; path.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Fri, 08 May 2026 13:43:06 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.10.4.dmg"
+        length="7075660"
+        type="application/octet-stream"
+        sparkle:edSignature="xPKR90gP6YSlnj1yI63bfBClMxiwFjw396M2rz9OabABxvUyJ7uFzsFkE/w/bwzCIepOwBrE36yRb7LP8pt7DA=="
+      />
+    </item>
+    <item>
       <title>Version 3.10.3</title>
       <sparkle:version>43</sparkle:version>
       <sparkle:shortVersionString>3.10.3</sparkle:shortVersionString>
