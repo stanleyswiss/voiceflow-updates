@@ -6,6 +6,30 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.10.7</title>
+      <sparkle:version>47</sparkle:version>
+      <sparkle:shortVersionString>3.10.7</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.10.7 &mdash; Apologies for the wild ride + introducing the Early-Bird (beta) channel</h2>
+        <p>Today was a marathon: <strong>seven stable releases in one afternoon</strong> (3.10.0 &rarr; 3.10.6) chasing a single bug in the new OpenAI native translation feature. Each was pushed straight to all users because that&rsquo;s how the update channel was configured. Sorry for the noise &mdash; that&rsquo;s a lot of update prompts in one day.</p>
+        <p>Going forward, risky changes get their own lane.</p>
+        <ul>
+          <li><strong>New: Early-Bird (beta) update channel.</strong> Settings &rarr; Updates now has a &ldquo;Receive beta updates&rdquo; toggle. Flip it on and you&rsquo;ll see experimental builds (versioned <code>3.x.y-beta.N</code>) before they ship to everyone &mdash; useful if you want to help test fixes early or just like living closer to the edge. Stable users (toggle off, the default) continue to see only fully-vetted releases. You can switch off anytime; the next stable release will pick you back up.</li>
+          <li>This release itself is stable &mdash; the toggle is the only feature, no behavior change for the engines or anything else. Nothing forces you onto the beta channel.</li>
+          <li>Built on Sparkle&rsquo;s native channel-tagging mechanism &mdash; clean rollback, clean opt-out, no parallel feeds to maintain.</li>
+        </ul>
+        <p>Tomorrow&rsquo;s latency-tuning changes (faster post-stop paste, instrumentation, user-controllable wait window) will land first on the beta channel as 3.11.0-beta.1 for early-bird users, then promote to stable once verified. Thanks for your patience today.</p>
+      ]]></description>
+      <pubDate>Fri, 08 May 2026 18:52:44 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.10.7.dmg"
+        length="7094797"
+        type="application/octet-stream"
+        sparkle:edSignature="e/27N60Kiaiw9wl5eaye5ZvUAn8N/qBoCshynz2V6YV6f01VDu7VatpaUPUucA1+AXWRIpFjLexdL8xZiAhrDw=="
+      />
+    </item>
+    <item>
       <title>Version 3.10.6</title>
       <sparkle:version>46</sparkle:version>
       <sparkle:shortVersionString>3.10.6</sparkle:shortVersionString>
