@@ -6,6 +6,27 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.10.5</title>
+      <sparkle:version>45</sparkle:version>
+      <sparkle:shortVersionString>3.10.5</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.10.5 &mdash; Native translation now actually waits for the full translation</h2>
+        <ul>
+          <li><strong>Fixed (for real this time): trailing translated text being cut off when you press stop.</strong> Two issues compounded: (a) we were sending an <code>input_audio_buffer.commit</code> event to nudge the server, but per OpenAI&rsquo;s documentation translate sessions are purely continuous and the client never signals turn boundaries &mdash; that event was likely silently erroring on the translate endpoint and cutting subsequent deltas short. Removed. (b) The post-stop wait timings were too aggressive: a 1.5s pre-start window (raised to 3s) and 0.8s post-start quiet window (raised to 1.5s), both insufficient for the real latency of the translate model. Hard cap raised from 8s to 12s.</li>
+          <li><strong>What this means in practice:</strong> when you press stop, audio capture halts but the WebSocket stays alive and the engine keeps receiving translated tokens from the server. The wait loop only releases when the model has genuinely gone quiet for 1.5 seconds, or fired its explicit completion event, or 12 seconds have passed. Whatever you saw streaming live in the pill is what lands in the paste.</li>
+          <li>Same-language English-to-English on Mini Transcribe / Transcribe is unchanged.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Fri, 08 May 2026 14:00:38 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.10.5.dmg"
+        length="7076401"
+        type="application/octet-stream"
+        sparkle:edSignature="IKNZ7wTyzrHnxSVVz1HWhwkoDPZ/oPiYjiIU3GwpMx5P2phlmMbevtLg/HGydTo5Z3ZBLVyZN81S8JZ9FUngBw=="
+      />
+    </item>
+    <item>
       <title>Version 3.10.4</title>
       <sparkle:version>44</sparkle:version>
       <sparkle:shortVersionString>3.10.4</sparkle:shortVersionString>
