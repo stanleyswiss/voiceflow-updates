@@ -6,6 +6,27 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.10.3</title>
+      <sparkle:version>43</sparkle:version>
+      <sparkle:shortVersionString>3.10.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.10.3 &mdash; Fix: trailing words dropped from cloud transcripts + clearer engine names</h2>
+        <ul>
+          <li><strong>Fixed: the last word (or two) of every cloud-engine dictation was being cropped from the paste.</strong> Root cause was a race in our audio pipeline: <code>AVAudioEngine.stop()</code> halts the mic tap callback, but audio chunks already queued for conversion + send were still in flight when we told the server &ldquo;commit everything you have.&rdquo; Server committed without the last ~200-400ms of speech. Both <code>OpenAIRealtimeEngine</code> and <code>OpenAITranslateEngine</code> had the same race; the translate engine&rsquo;s shorter wait made it visible. Now we drain our local audio queue before sending commit, so every captured chunk reaches the server first.</li>
+          <li><strong>Translate stop is also smarter about waiting.</strong> Replaced the fixed 1.2s post-commit wait with a quiescence-based wait: exit when the server&rsquo;s <code>done</code> event arrives OR when no new event has arrived for 500ms (after a minimum 200ms). Caps total wait at 2.5s. Result: tighter lag in the common case, catches genuinely-late deltas in the edge case.</li>
+          <li><strong>Engine names disambiguated.</strong> &ldquo;OpenAI Whisper&rdquo; (the local whisper.cpp engine that runs offline on your Mac) is now &ldquo;Whisper (local, offline)&rdquo;. &ldquo;OpenAI Realtime&rdquo; is now &ldquo;OpenAI Realtime (cloud)&rdquo;. The new realtime sub-model &ldquo;Whisper Streaming&rdquo; is now &ldquo;Realtime Whisper (cloud, low-latency)&rdquo; with a clearer cost note (~5-6x more expensive than Mini). No behavior change &mdash; just easier to tell which Whisper is which.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Fri, 08 May 2026 13:17:14 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.10.3.dmg"
+        length="7076473"
+        type="application/octet-stream"
+        sparkle:edSignature="Yl98sv0ULxzetuCU7wZJt2rea2NVCp0yogOGl5mr7qiOtnGDGK3WHmeu5HZBIv+SgNE2XJOgEXn0bw4S5x1kBA=="
+      />
+    </item>
+    <item>
       <title>Version 3.10.2</title>
       <sparkle:version>42</sparkle:version>
       <sparkle:shortVersionString>3.10.2</sparkle:shortVersionString>
