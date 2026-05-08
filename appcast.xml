@@ -6,6 +6,27 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.10.2</title>
+      <sparkle:version>42</sparkle:version>
+      <sparkle:shortVersionString>3.10.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.10.2 &mdash; Faster paste on native translation + no more dropped trailing words</h2>
+        <ul>
+          <li><strong>Translation paste is significantly faster.</strong> The dedicated translation session streams continuously and only fires &ldquo;final&rdquo; events at model-detected sentence boundaries &mdash; not when you stop talking. 3.10.0/3.10.1 waited up to 5 seconds for a final that often never came. Now we nudge the server to flush trailing audio on stop, wait at most 1.2 seconds, and promote any in-flight partial to the final if needed. Result: paste happens roughly when you expect it instead of after a 5-second pause.</li>
+          <li><strong>Trailing words no longer dropped.</strong> If you stopped mid-sentence, the last few words could be lost because they were buffered in a partial that never received a finalization event. They&rsquo;re now folded into the delivered text.</li>
+          <li>Same-language English-to-English on Mini Transcribe / Transcribe is unchanged &mdash; this only affects the &ldquo;Translate live via OpenAI Realtime&rdquo; per-profile path.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Fri, 08 May 2026 11:08:03 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.10.2.dmg"
+        length="7073465"
+        type="application/octet-stream"
+        sparkle:edSignature="9F6h5IQZKboG3X5T+ymU41BHq+CBUeOd1NqI/r0datr7/XnLLykBFZge9qyCSfpe7wOblAa6+CJaXOJoshcPBQ=="
+      />
+    </item>
+    <item>
       <title>Version 3.10.1</title>
       <sparkle:version>41</sparkle:version>
       <sparkle:shortVersionString>3.10.1</sparkle:shortVersionString>
