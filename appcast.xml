@@ -6,6 +6,28 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.10.0</title>
+      <sparkle:version>40</sparkle:version>
+      <sparkle:shortVersionString>3.10.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.10.0 &mdash; New OpenAI realtime models + native live translation</h2>
+        <ul>
+          <li><strong>New OpenAI Realtime model: Whisper Streaming.</strong> Added <code>gpt-realtime-whisper</code> (released by OpenAI on May 7, 2026) as a third option in the OpenAI Realtime model picker. Optimized for low-latency live transcription with strong handling of accents and noisy audio. Sends your profile&rsquo;s input language as a hint to the model for better quality on non-English dictation. Mini Transcribe remains the default; Whisper Streaming is opt-in for users who want lowest latency or better multilingual handling.</li>
+          <li><strong>New: Native live translation via OpenAI Realtime.</strong> Per-profile toggle &ldquo;Translate live via OpenAI Realtime (low-latency)&rdquo;. When enabled and the profile&rsquo;s output language differs from the input language, dictation streams through OpenAI&rsquo;s dedicated <code>gpt-realtime-translate</code> endpoint &mdash; transcription and translation happen in a single streaming pass instead of transcribe&rarr;then&rarr;LLM-translate. Result: roughly 1&ndash;2 seconds faster perceived latency on cross-lingual dictation (e.g. Bulgarian or Russian or Spanish &rarr; English). Uses ~$0.034/min while active vs. ~$0.007/min on the default same-language path; off by default, enable per profile.</li>
+          <li><strong>Migrated to OpenAI&rsquo;s GA Realtime API.</strong> Dropped the legacy <code>OpenAI-Beta: realtime=v1</code> header. Existing models (<code>gpt-4o-mini-transcribe</code>, <code>gpt-4o-transcribe</code>) continue to work unchanged on the GA endpoint.</li>
+          <li><strong>Default behavior unchanged.</strong> Same-language users on the default Mini Transcribe model see no behavioral change &mdash; just a smoother backend.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Fri, 08 May 2026 06:21:43 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.10.0.dmg"
+        length="7072054"
+        type="application/octet-stream"
+        sparkle:edSignature="Y93B3uDmzY42ps4z/DkJ6rocO7So+XugVPUQ45VcptMpCWMivrfXG+8uwYW6B6JcmGlMe2hV7la/IVnJyDO+DA=="
+      />
+    </item>
+    <item>
       <title>Version 3.9.0</title>
       <sparkle:version>39</sparkle:version>
       <sparkle:shortVersionString>3.9.0</sparkle:shortVersionString>
