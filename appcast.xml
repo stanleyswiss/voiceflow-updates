@@ -6,6 +6,27 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.10.1</title>
+      <sparkle:version>41</sparkle:version>
+      <sparkle:shortVersionString>3.10.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.10.1 &mdash; Fix: legacy OpenAI Realtime models produced empty results in 3.10.0</h2>
+        <ul>
+          <li><strong>Fixed: <code>gpt-4o-mini-transcribe</code> and <code>gpt-4o-transcribe</code> dictation came back empty.</strong> 3.10.0 migrated the OpenAI Realtime engine to the GA endpoint (dropping the legacy <code>OpenAI-Beta</code> header) but kept sending the old <code>transcription_session.update</code> event shape for the legacy models. The GA endpoint silently ignores that event, so those models had no transcription configured and produced no transcripts &mdash; the overlay said &ldquo;Delivered&rdquo; with no text inserted. Native translation (<code>gpt-realtime-translate</code>) and Whisper Streaming were unaffected.</li>
+          <li><strong>All three OpenAI Realtime models now use the GA <code>session.update</code> shape.</strong> Same-language English-to-English dictation works again on Mini Transcribe (the default) and Transcribe.</li>
+          <li>If you were stuck on 3.10.0 with the default settings, this hotfix restores normal behavior. Translation users who were happy with 3.10.0 see no change.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Fri, 08 May 2026 08:58:47 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.10.1.dmg"
+        length="7071221"
+        type="application/octet-stream"
+        sparkle:edSignature="uv3erxnN9vmsLJ74B+RYVC2U4gG/ewMuvNrmGdEIORGhNhQ9pGF7pRM4NcuKmEInbduj5aP2je8a0dpPMP1HBQ=="
+      />
+    </item>
+    <item>
       <title>Version 3.10.0</title>
       <sparkle:version>40</sparkle:version>
       <sparkle:shortVersionString>3.10.0</sparkle:shortVersionString>
