@@ -6,6 +6,27 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.10.6</title>
+      <sparkle:version>46</sparkle:version>
+      <sparkle:shortVersionString>3.10.6</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.10.6 &mdash; Native translation: real fix this time (silence padding)</h2>
+        <ul>
+          <li><strong>Fixed (for real): the server stopped emitting translated text the moment audio stopped arriving.</strong> Per OpenAI&rsquo;s docs, the dedicated translation endpoint is PURELY continuous &mdash; the client never sends commit, close, or response.create events; the server emits deltas while audio (including silence) is arriving and pauses when audio dries up. The previous fixes (longer wait timings, dropping the bogus commit) didn&rsquo;t help because the issue was upstream: the model had no signal that you&rsquo;d finished speaking, so it never produced the trailing translation. Now, when you press stop, the engine sends 1 second of zero-PCM silence (5x 200ms chunks) via the same audio-append channel. The model sees a natural end-of-utterance, finalizes the translation, and the engine&rsquo;s post-stop wait catches all the trailing deltas before delivery.</li>
+          <li>Diagnosis credit: GPT-5 via the codex CLI, after several rounds of wait-timing tweaks failed.</li>
+          <li>Same-language paths and Mini Transcribe / Transcribe are unchanged.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Fri, 08 May 2026 15:14:08 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.10.6.dmg"
+        length="7082440"
+        type="application/octet-stream"
+        sparkle:edSignature="e8VtaCmJmdMl/dACMQNiY7aGUO2p/Vf7NFMyeQ3E/2bpMmdxqaFQyuf9x82tWCEv4yfV8TutoSIo5vivaosaBw=="
+      />
+    </item>
+    <item>
       <title>Version 3.10.5</title>
       <sparkle:version>45</sparkle:version>
       <sparkle:shortVersionString>3.10.5</sparkle:shortVersionString>
