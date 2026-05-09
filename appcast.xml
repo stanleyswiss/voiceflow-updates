@@ -6,6 +6,30 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.12.0-beta.5 (Early Bird)</title>
+      <sparkle:version>57</sparkle:version>
+      <sparkle:shortVersionString>3.12.0-beta.5</sparkle:shortVersionString>
+      <sparkle:channel>beta</sparkle:channel>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.12.0-beta.5 (Early Bird)</h2>
+        <p><em>Beta release. Visible only to users with &ldquo;Receive beta updates&rdquo; turned on in Settings &rarr; Updates.</em></p>
+        <p><strong>Restores fast translate stop after the beta.4 regression.</strong></p>
+        <ul>
+          <li>Beta.4 removed the post-stop quiet-window heuristic and tried to wait purely for the model&rsquo;s <code>session.output_transcript.done</code> event. Empirically <code>gpt-realtime-translate</code> does NOT reliably emit that event after our silence padding — it just keeps streaming deltas trickle-style. Result: every dictation hit the 8s hard cap before the partial-fold fired. Slow and unpleasant.</li>
+          <li>Three-way exit now: (1) <code>done</code> if the model does finalize (rare on this endpoint), (2) 2.5s of inter-delta silence (the normal exit — long enough to absorb mid-generation pauses, short enough to feel snappy), (3) the user-controllable hard cap as the safety net for true stalls.</li>
+          <li>Slider in Settings &rarr; AI &rarr; <em>Translate Stop Max Wait</em> still controls the hard cap (3–12s, default 8s). On normal usage you&rsquo;ll never hit it; it&rsquo;s just there if the server stalls.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Sat, 09 May 2026 13:35:28 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.12.0-beta.5.dmg"
+        length="7147815"
+        type="application/octet-stream"
+        sparkle:edSignature="KuP2iLgFMPkwy342nKEuADRMn8+e1C/kBjRhgpjLTl2w7jMkU5fPfezuD2KcCZGlnlWNzhX25VKgE0r1jK9DCA=="
+      />
+    </item>
+    <item>
       <title>Version 3.12.0-beta.4 (Early Bird)</title>
       <sparkle:version>56</sparkle:version>
       <sparkle:shortVersionString>3.12.0-beta.4</sparkle:shortVersionString>
