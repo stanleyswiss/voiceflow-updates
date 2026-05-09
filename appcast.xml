@@ -6,6 +6,36 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.11.0-beta.4 (Early Bird)</title>
+      <sparkle:version>51</sparkle:version>
+      <sparkle:shortVersionString>3.11.0-beta.4</sparkle:shortVersionString>
+      <sparkle:channel>beta</sparkle:channel>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.11.0-beta.4 (Early Bird)</h2>
+        <p><em>Beta release. Visible only to users with &ldquo;Receive beta updates&rdquo; turned on in Settings &rarr; Updates.</em></p>
+        <h3>Vocabulary &mdash; teach the AI how you actually pronounce things</h3>
+        <ul>
+          <li>New <strong>Vocabulary</strong> section in Settings &rarr; AI. Add entries with a canonical form (&ldquo;Claude Code&rdquo;) and a list of misrecognitions you commonly produce (&ldquo;cloud code, clawed code, claude coat&rdquo;). Particularly helpful for non-native speakers and homophones (&ldquo;cloud&rdquo; vs &ldquo;Claude&rdquo;) where the speech engine consistently picks the wrong word.</li>
+          <li>Entries are injected into the AI cleanup prompt as a vocabulary line &mdash; the LLM disambiguates from context, so &ldquo;Claude Code is great&rdquo; lands correctly while &ldquo;deploy to the cloud&rdquo; stays untouched. No deterministic regex pre-pass that would over-replace.</li>
+          <li>Canonical product names are also flagged as &ldquo;preserve when translating&rdquo; in the prompt &mdash; translation mode no longer turns &ldquo;Claude Code&rdquo; into &ldquo;Code de Claude&rdquo; in French output.</li>
+          <li>Global scope in this beta &mdash; applies to every dictation that uses AI cleanup. Per-profile selection can come later if false matches show up.</li>
+        </ul>
+        <h3>Update prompt foreground fix</h3>
+        <ul>
+          <li>Clicking <strong>Check for Updates</strong> from the menu bar (or Settings) when an update exists now brings Sparkle&rsquo;s &ldquo;Update Available&rdquo; window to the foreground reliably &mdash; previously it could open behind whatever app was frontmost when the network check finished.</li>
+          <li>Implemented via Sparkle&rsquo;s <code>SPUStandardUserDriverDelegate</code> hook fired right before the alert is presented, not at click time. Activation policy temporarily set to <code>.regular</code> so users who hide Sonotexta from the dock still see the prompt; restored on dismiss.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Sat, 09 May 2026 07:21:09 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.11.0-beta.4.dmg"
+        length="7142219"
+        type="application/octet-stream"
+        sparkle:edSignature="B6QnZwxKco6aKukyuRv2IiZLIbXU87sErXJ4G/l6nWejfp4ayQbGSbYzQ/Y4HhpSYI65SQUJptqtY7Vr8CPFDQ=="
+      />
+    </item>
+    <item>
       <title>Version 3.11.0-beta.3 (Early Bird)</title>
       <sparkle:version>50</sparkle:version>
       <sparkle:shortVersionString>3.11.0-beta.3</sparkle:shortVersionString>
