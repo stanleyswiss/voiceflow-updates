@@ -6,6 +6,30 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.12.0-beta.2 (Early Bird)</title>
+      <sparkle:version>54</sparkle:version>
+      <sparkle:shortVersionString>3.12.0-beta.2</sparkle:shortVersionString>
+      <sparkle:channel>beta</sparkle:channel>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.12.0-beta.2 (Early Bird)</h2>
+        <p><em>Beta release. Visible only to users with &ldquo;Receive beta updates&rdquo; turned on in Settings &rarr; Updates.</em></p>
+        <ul>
+          <li><strong>Fixes &ldquo;pill shows English, paste shows source language&rdquo; for native translation + AI cleanup.</strong> When the realtime translate engine produced English from Bulgarian (or any source &rarr; target pair) and AI cleanup was on for the profile, the LLM&rsquo;s system prompt still said &ldquo;the speaker is dictating in Bulgarian&rdquo; while handing it the already-translated English text. A reasonable model interpreted that as &ldquo;render this in Bulgarian&rdquo; and back-translated, so the pasted text came out in the source language even though the pill correctly streamed the target language.</li>
+          <li>The fix tells the LLM the truth: when the text has already been translated by the realtime engine, the prompt now says &ldquo;The text is already in &lt;target language&gt;; just clean it up, do not translate it.&rdquo; — preserving the engine&rsquo;s translation through the cleanup pass.</li>
+          <li>BYOK + Cloud both affected; both fixed. Independent of the worker proxy.</li>
+        </ul>
+        <p>Also includes the Cloudflare Worker queue fix from earlier (relayed messages no longer dropped during the upstream WebSocket handshake) — Cloud subscribers&rsquo; native translation path is now fully working end-to-end.</p>
+      ]]></description>
+      <pubDate>Sat, 09 May 2026 12:12:17 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.12.0-beta.2.dmg"
+        length="7145884"
+        type="application/octet-stream"
+        sparkle:edSignature="ta2Xm1qqEkwfixjhUr59MzEAp83iIu0tYlgAM/gU+8gB3lr4EiafW+QlN1GsqrnVZx8xA3swegtzrB9/aHB2Dg=="
+      />
+    </item>
+    <item>
       <title>Version 3.12.0-beta.1 (Early Bird)</title>
       <sparkle:version>53</sparkle:version>
       <sparkle:shortVersionString>3.12.0-beta.1</sparkle:shortVersionString>
