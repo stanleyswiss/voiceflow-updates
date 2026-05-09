@@ -6,6 +6,31 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.12.0-beta.6 (Early Bird)</title>
+      <sparkle:version>58</sparkle:version>
+      <sparkle:shortVersionString>3.12.0-beta.6</sparkle:shortVersionString>
+      <sparkle:channel>beta</sparkle:channel>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.12.0-beta.6 (Early Bird)</h2>
+        <p><em>Beta release. Visible only to users with &ldquo;Receive beta updates&rdquo; turned on in Settings &rarr; Updates.</em></p>
+        <p><strong>Fixes &ldquo;trailing words spoken right before stop never reach the paste.&rdquo;</strong></p>
+        <ul>
+          <li><strong>Continuous-silence flush mode for native translation.</strong> Earlier betas sent a one-shot 1s burst of silence after stop, then waited for output deltas. The translate model needs more silent audio than that to push trailing source audio through ingestion. Result: anything you spoke right before pressing stop, whose translation hadn&rsquo;t streamed back yet, was lost. Now we keep sending zero-audio chunks at a 200ms cadence for up to 5 seconds, ensuring the model has enough silence to finish ingesting and translating the trailing source.</li>
+          <li><strong>Dual-stream quiet detection.</strong> Stop now waits for BOTH the source-side input transcript AND the output translation deltas to be quiet for 1.5s before exiting — not just the output. This prevents exiting while the model is still ingesting (input stream active) but hasn&rsquo;t produced translation deltas for the trailing audio yet.</li>
+          <li><strong>Detailed stop-path logs</strong> — T0 stop pressed, queue drained, silence chunks sent, first post-stop output delta delay, exit reason (done / both-streams-quiet / no-events / hard-cap), final text length, total elapsed.</li>
+        </ul>
+        <p>Diagnosis credit: Codex via codex CLI &mdash; identified that the previous quiet-window only watched output and could exit while the model was still ingesting trailing input.</p>
+      ]]></description>
+      <pubDate>Sat, 09 May 2026 13:57:29 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.12.0-beta.6.dmg"
+        length="7156031"
+        type="application/octet-stream"
+        sparkle:edSignature="ra6lIwDhS6h5ud+TwbR+/uqDY3BYwb15G+SjbPG2CUKLHrYibS+CmNgh3y7vW+tbdgpxLOIenAMSZa7jPE05BA=="
+      />
+    </item>
+    <item>
       <title>Version 3.12.0-beta.5 (Early Bird)</title>
       <sparkle:version>57</sparkle:version>
       <sparkle:shortVersionString>3.12.0-beta.5</sparkle:shortVersionString>
