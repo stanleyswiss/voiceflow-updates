@@ -11,34 +11,12 @@
       <sparkle:shortVersionString>3.12.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-        <h2>Sonotexta 3.12.0 &mdash; native translation on Cloud + reliable trailing-words</h2>
-        <p>Promotes the entire 3.12.0-beta.1..6 stack to stable. Two big-deal changes plus six rounds of polish.</p>
-
-        <h3>Native translation included with Sonotexta Cloud</h3>
+        <h2>Sonotexta 3.12.0</h2>
         <ul>
-          <li>Previously <code>gpt-realtime-translate</code> required your own OpenAI API key on every tier. <strong>Cloud subscribers ($14.99/mo) now get it included</strong> &mdash; the translate engine routes through the same Cloudflare Worker proxy as cloud transcription, gated to the Cloud plan server-side. BYOK on every tier continues to work as before.</li>
-        </ul>
-
-        <h3>Trailing words no longer lost on quick stop</h3>
-        <ul>
-          <li>If you spoke a sentence and pressed stop right at the end &mdash; before the translation had streamed back to the pill &mdash; the trailing words could be lost. Earlier versions sent a one-shot 1s burst of silence after stop, then waited for output deltas; that wasn&rsquo;t enough silence to push the trailing source audio through the model&rsquo;s ingestion.</li>
-          <li>Now we send zero-audio chunks at a 200ms cadence for up to 5 seconds, and exit only when BOTH the source-side input transcript AND the output translation deltas have been quiet for 1.5s. The trailing translation lands every time.</li>
-        </ul>
-
-        <h3>BYOK takes precedence over the managed proxy</h3>
-        <ul>
-          <li>If you have a configured OpenAI API key, AI cleanup and realtime engines now use it directly &mdash; even on a Cloud subscription. Previously the proxy silently overrode the key (running <code>gpt-5-mini</code> regardless of your model choice). Honest <code>route=direct|proxy</code> + <code>model=&lt;actual&gt;</code> log lines on every dictation so the routing is auditable.</li>
-        </ul>
-
-        <h3>LLM cleanup no longer back-translates already-translated text</h3>
-        <ul>
-          <li>When the realtime translate engine had already produced English from Bulgarian, the LLM cleanup pass was being told &ldquo;the speaker is dictating in Bulgarian&rdquo; and was back-translating the English to Bulgarian for the paste. Pill English, paste source-language. Fixed by passing the post-translation language to the cleanup prompt with an explicit &ldquo;do not translate&rdquo; instruction.</li>
-        </ul>
-
-        <h3>Other</h3>
-        <ul>
-          <li>Detailed translate-stop diagnostic logs (T0/T1/T2/T3, exit reason, silence chunks sent, final length).</li>
-          <li>Small worker fix: client &rarr; upstream WebSocket frames are queued until the upstream handshake completes. Previously they were dropped during the handshake window, which caused the translate session.update (target language) to be lost in some Cloud cases.</li>
+          <li><strong>Native translation now included with Sonotexta Cloud.</strong> No OpenAI API key required for Cloud subscribers.</li>
+          <li><strong>More reliable native translation.</strong> Trailing words no longer drop when you stop dictating quickly.</li>
+          <li><strong>Your API key is respected.</strong> When you provide your own OpenAI key, Sonotexta uses it &mdash; even on a Cloud subscription. Pick your preferred model in Settings &rarr; AI.</li>
+          <li><strong>Cleaner translated output.</strong> Fixes a case where the AI cleanup could undo the translation and revert text to the source language.</li>
         </ul>
       ]]></description>
       <pubDate>Sat, 09 May 2026 14:19:47 +0000</pubDate>
@@ -200,33 +178,12 @@
       <sparkle:shortVersionString>3.11.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-        <h2>Sonotexta 3.11.0 &mdash; bigger upgrade than the version number suggests</h2>
-        <p>This stable release promotes everything that landed across the four 3.11.0 betas (May 9). It's a quality-of-life and reliability bundle for the OpenAI Realtime + native translation paths, plus a new Vocabulary feature for non-native speakers and product names.</p>
-
-        <h3>Translation reliability</h3>
+        <h2>Sonotexta 3.11.0</h2>
         <ul>
-          <li><strong>Faster translate stop.</strong> Native translation finishes ~320ms quicker per stop &mdash; the silence-padding burst we send to give the model an end-of-utterance signal no longer paces itself in real time.</li>
-          <li><strong>New: Translate Stop Wait slider</strong> in Settings &rarr; AI. Range 0.5&ndash;2.0s, default 1.5s. Dial down for snappier finishes if your model and network are fast; dial up if you ever see the last word cropped.</li>
-          <li><strong>Symmetric stop-as-pause for the regular OpenAI Realtime engine.</strong> If you released the hotkey before partial deltas appeared, the regular transcription path could finish with nothing because the server&rsquo;s VAD never got an end-of-utterance signal. Same silence-padding fix as translate, scoped to the regular endpoint.</li>
-          <li><strong>Trailing-partial fallback</strong> &mdash; if the server doesn&rsquo;t finalize within the 5s wait, any non-empty partial is folded into the final delivery instead of being dropped.</li>
-        </ul>
-
-        <h3>Paste delivery (the &ldquo;text stayed on clipboard&rdquo; bug)</h3>
-        <ul>
-          <li><strong>Verified target activation.</strong> macOS 14+&rsquo;s cooperative-activation model meant the deprecated <code>activate()</code> could be honored without bringing the user&rsquo;s edited document back to key. Now we use <code>activate(options: [.activateAllWindows])</code> + <code>NSApp.yieldActivation(to:)</code> on macOS 14+ and POLL <code>frontmostApplication</code> for up to 600ms before pasting. If activation never lands, the menu-bar status says &ldquo;Copied &mdash; paste manually&rdquo; honestly instead of claiming delivery.</li>
-          <li><strong>Frozen session target.</strong> The longer translate post-stop window (silence + slider + AI) gave focus-stealing windows time to flip the live target mid-dictation. The target is now snapshotted at start of dictation and passed explicitly to the paste call &mdash; immune to mid-session app activations.</li>
-        </ul>
-
-        <h3>Vocabulary &mdash; teach the AI how you actually pronounce things</h3>
-        <ul>
-          <li>New <strong>Vocabulary</strong> section in Settings &rarr; AI. Add entries with a canonical form (&ldquo;Claude Code&rdquo;) and a list of misrecognitions you commonly produce (&ldquo;cloud code, clawed code, claude coat&rdquo;). Particularly helpful for non-native speakers and homophones (&ldquo;cloud&rdquo; vs &ldquo;Claude&rdquo;) where the speech engine consistently picks the wrong word.</li>
-          <li>Entries are injected into the AI cleanup prompt &mdash; the LLM disambiguates from context, so &ldquo;Claude Code is great&rdquo; lands correctly while &ldquo;deploy to the cloud&rdquo; stays untouched. No deterministic regex pre-pass that would over-replace.</li>
-          <li>Canonical product names are also flagged for preservation across translation, so &ldquo;Claude Code&rdquo; stays &ldquo;Claude Code&rdquo; in French output instead of becoming &ldquo;Code de Claude&rdquo;.</li>
-        </ul>
-
-        <h3>Other</h3>
-        <ul>
-          <li><strong>Update prompt foreground fix</strong> &mdash; clicking Check for Updates when an update exists now reliably brings Sparkle&rsquo;s &ldquo;Update Available&rdquo; window to the front instead of opening behind whatever app was frontmost when the network check finished.</li>
+          <li><strong>Faster, more reliable native translation.</strong> Quicker stop response and a configurable max-wait in Settings &rarr; AI.</li>
+          <li><strong>Reliable paste delivery.</strong> Fixes the case where the transcription would land on the clipboard but never reach your app, including when the active window changed mid-dictation.</li>
+          <li><strong>Vocabulary.</strong> Teach the AI cleanup how you pronounce specific terms &mdash; useful for product names and homophones. Entries are also preserved across translation. Settings &rarr; AI &rarr; Vocabulary.</li>
+          <li><strong>Update prompt comes to the front.</strong> Checking for Updates now reliably brings the prompt to the foreground instead of opening behind another app.</li>
         </ul>
       ]]></description>
       <pubDate>Sat, 09 May 2026 11:28:04 +0000</pubDate>
@@ -348,15 +305,10 @@
       <sparkle:shortVersionString>3.10.7</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-        <h2>Sonotexta 3.10.7 &mdash; Apologies for the wild ride + introducing the Early-Bird (beta) channel</h2>
-        <p>Today was a marathon: <strong>seven stable releases in one afternoon</strong> (3.10.0 &rarr; 3.10.6) chasing a single bug in the new OpenAI native translation feature. Each was pushed straight to all users because that&rsquo;s how the update channel was configured. Sorry for the noise &mdash; that&rsquo;s a lot of update prompts in one day.</p>
-        <p>Going forward, risky changes get their own lane.</p>
+        <h2>Sonotexta 3.10.7</h2>
         <ul>
-          <li><strong>New: Early-Bird (beta) update channel.</strong> Settings &rarr; Updates now has a &ldquo;Receive beta updates&rdquo; toggle. Flip it on and you&rsquo;ll see experimental builds (versioned <code>3.x.y-beta.N</code>) before they ship to everyone &mdash; useful if you want to help test fixes early or just like living closer to the edge. Stable users (toggle off, the default) continue to see only fully-vetted releases. You can switch off anytime; the next stable release will pick you back up.</li>
-          <li>This release itself is stable &mdash; the toggle is the only feature, no behavior change for the engines or anything else. Nothing forces you onto the beta channel.</li>
-          <li>Built on Sparkle&rsquo;s native channel-tagging mechanism &mdash; clean rollback, clean opt-out, no parallel feeds to maintain.</li>
+          <li><strong>New: Early-Bird (beta) update channel.</strong> Settings &rarr; Updates now has a &ldquo;Receive beta updates&rdquo; toggle. Opt in to receive new features and fixes before they ship to everyone. Off by default; you can switch it off anytime.</li>
         </ul>
-        <p>Tomorrow&rsquo;s latency-tuning changes (faster post-stop paste, instrumentation, user-controllable wait window) will land first on the beta channel as 3.11.0-beta.1 for early-bird users, then promote to stable once verified. Thanks for your patience today.</p>
       ]]></description>
       <pubDate>Fri, 08 May 2026 18:52:44 +0000</pubDate>
       <enclosure
