@@ -6,6 +6,31 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.11.0-beta.1 (Early Bird)</title>
+      <sparkle:version>48</sparkle:version>
+      <sparkle:shortVersionString>3.11.0-beta.1</sparkle:shortVersionString>
+      <sparkle:channel>beta</sparkle:channel>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.11.0-beta.1 (Early Bird)</h2>
+        <p><em>Beta release. Visible only to users with &ldquo;Receive beta updates&rdquo; turned on in Settings &rarr; Updates.</em></p>
+        <ul>
+          <li><strong>Faster translate stop.</strong> Native translation finishes ~320ms quicker on every stop &mdash; the silence-padding burst we send to give the model an end-of-utterance signal no longer paces itself in real time. Same correctness, less waiting.</li>
+          <li><strong>New slider: Translate Stop Wait.</strong> Settings &rarr; AI now exposes how long Sonotexta waits for the translation model to finish streaming after you release the hotkey. Range 0.5&ndash;2.0s, default 1.5s. Dial down for snappier finishes if your model and network are fast; dial up if you ever see the last word cropped.</li>
+          <li><strong>Correctness fix.</strong> A <code>done</code> event arriving during the silence-padding window is no longer clobbered by the post-padding state reset. The trailing translation lands cleanly in more cases.</li>
+          <li><strong>Diagnostics.</strong> Stop-path timestamps in the console (T0 stop pressed &rarr; T1 silence sent &rarr; first post-stop delta &rarr; done/quiet &rarr; paste delivered) so we can verify the latency claims on real hardware.</li>
+        </ul>
+        <p>Engine logic unchanged for non-translate paths. If anything regresses, switch the &ldquo;Receive beta updates&rdquo; toggle off in Settings &rarr; Updates and Sparkle will reel you back to the latest stable build.</p>
+      ]]></description>
+      <pubDate>Sat, 09 May 2026 06:16:57 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.11.0-beta.1.dmg"
+        length="7101850"
+        type="application/octet-stream"
+        sparkle:edSignature="FyMPgZpXNzGX97mJhidYQ5cANPznv8EXyHU4pZ4obDNBnDOy5+8Yn1C/3HPQPDuzJFKwIkzi7FX+b5udOkvNCA=="
+      />
+    </item>
+    <item>
       <title>Version 3.10.7</title>
       <sparkle:version>47</sparkle:version>
       <sparkle:shortVersionString>3.10.7</sparkle:shortVersionString>
