@@ -6,6 +6,31 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.12.0-beta.4 (Early Bird)</title>
+      <sparkle:version>56</sparkle:version>
+      <sparkle:shortVersionString>3.12.0-beta.4</sparkle:shortVersionString>
+      <sparkle:channel>beta</sparkle:channel>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.12.0-beta.4 (Early Bird)</h2>
+        <p><em>Beta release. Visible only to users with &ldquo;Receive beta updates&rdquo; turned on in Settings &rarr; Updates.</em></p>
+        <p><strong>Fixes the &ldquo;sometimes doesn&rsquo;t take my text&rdquo; / cropped-translation issue on native translation.</strong></p>
+        <ul>
+          <li><strong>Trust the model&rsquo;s &ldquo;done&rdquo; signal.</strong> Earlier 3.12 betas had a quiet-window heuristic that broke out of the post-stop wait after 1.5s of inter-delta silence, on the assumption that &ldquo;quiet means done.&rdquo; That assumption was wrong: <code>gpt-realtime-translate</code> emits deltas with natural gaps of 1–3s while still generating, especially for longer non-English source sentences. The heuristic was cutting the model off mid-translation and pushing the partial-fold fallback path into the happy path — which is why translations were hit-or-miss.</li>
+          <li>Now the wait loop only exits when the authoritative <code>session.output_transcript.done</code> event arrives, or when the user-controllable safety cap fires for true server stalls. Partial-fold becomes a real fallback again, not the default path.</li>
+          <li><strong>Slider semantics changed</strong> — Settings &rarr; AI &rarr; <code>Translate Stop Max Wait</code> now controls the safety cap (3.0–12.0s, default 8.0s) instead of the quiet-window threshold. Most dictations finish well before the cap because <code>done</code> arrives in 200–800ms; the cap is just for stalls. Stored values from the old range (0.5–2.0s) are migrated to the new default automatically on update.</li>
+        </ul>
+        <p>Diagnosis credit: the route logs added in beta.3 surfaced this immediately — every translation log line ended with &ldquo;trailing partial folded into final&rdquo; instead of &ldquo;final .done received,&rdquo; pinpointing the heuristic as the culprit.</p>
+      ]]></description>
+      <pubDate>Sat, 09 May 2026 12:56:43 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.12.0-beta.4.dmg"
+        length="7147253"
+        type="application/octet-stream"
+        sparkle:edSignature="WGN+GD4nfB88zzU2G9qxOUvtjaGu1lnRv3NxbAAcg+d4cfpNiit4MtUVQHN5rIzAxVVcBTWe2ATGIWk6EgUHAQ=="
+      />
+    </item>
+    <item>
       <title>Version 3.12.0-beta.3 (Early Bird)</title>
       <sparkle:version>55</sparkle:version>
       <sparkle:shortVersionString>3.12.0-beta.3</sparkle:shortVersionString>
