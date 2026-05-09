@@ -6,6 +6,49 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.11.0</title>
+      <sparkle:version>52</sparkle:version>
+      <sparkle:shortVersionString>3.11.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.11.0 &mdash; bigger upgrade than the version number suggests</h2>
+        <p>This stable release promotes everything that landed across the four 3.11.0 betas (May 9). It's a quality-of-life and reliability bundle for the OpenAI Realtime + native translation paths, plus a new Vocabulary feature for non-native speakers and product names.</p>
+
+        <h3>Translation reliability</h3>
+        <ul>
+          <li><strong>Faster translate stop.</strong> Native translation finishes ~320ms quicker per stop &mdash; the silence-padding burst we send to give the model an end-of-utterance signal no longer paces itself in real time.</li>
+          <li><strong>New: Translate Stop Wait slider</strong> in Settings &rarr; AI. Range 0.5&ndash;2.0s, default 1.5s. Dial down for snappier finishes if your model and network are fast; dial up if you ever see the last word cropped.</li>
+          <li><strong>Symmetric stop-as-pause for the regular OpenAI Realtime engine.</strong> If you released the hotkey before partial deltas appeared, the regular transcription path could finish with nothing because the server&rsquo;s VAD never got an end-of-utterance signal. Same silence-padding fix as translate, scoped to the regular endpoint.</li>
+          <li><strong>Trailing-partial fallback</strong> &mdash; if the server doesn&rsquo;t finalize within the 5s wait, any non-empty partial is folded into the final delivery instead of being dropped.</li>
+        </ul>
+
+        <h3>Paste delivery (the &ldquo;text stayed on clipboard&rdquo; bug)</h3>
+        <ul>
+          <li><strong>Verified target activation.</strong> macOS 14+&rsquo;s cooperative-activation model meant the deprecated <code>activate()</code> could be honored without bringing the user&rsquo;s edited document back to key. Now we use <code>activate(options: [.activateAllWindows])</code> + <code>NSApp.yieldActivation(to:)</code> on macOS 14+ and POLL <code>frontmostApplication</code> for up to 600ms before pasting. If activation never lands, the menu-bar status says &ldquo;Copied &mdash; paste manually&rdquo; honestly instead of claiming delivery.</li>
+          <li><strong>Frozen session target.</strong> The longer translate post-stop window (silence + slider + AI) gave focus-stealing windows time to flip the live target mid-dictation. The target is now snapshotted at start of dictation and passed explicitly to the paste call &mdash; immune to mid-session app activations.</li>
+        </ul>
+
+        <h3>Vocabulary &mdash; teach the AI how you actually pronounce things</h3>
+        <ul>
+          <li>New <strong>Vocabulary</strong> section in Settings &rarr; AI. Add entries with a canonical form (&ldquo;Claude Code&rdquo;) and a list of misrecognitions you commonly produce (&ldquo;cloud code, clawed code, claude coat&rdquo;). Particularly helpful for non-native speakers and homophones (&ldquo;cloud&rdquo; vs &ldquo;Claude&rdquo;) where the speech engine consistently picks the wrong word.</li>
+          <li>Entries are injected into the AI cleanup prompt &mdash; the LLM disambiguates from context, so &ldquo;Claude Code is great&rdquo; lands correctly while &ldquo;deploy to the cloud&rdquo; stays untouched. No deterministic regex pre-pass that would over-replace.</li>
+          <li>Canonical product names are also flagged for preservation across translation, so &ldquo;Claude Code&rdquo; stays &ldquo;Claude Code&rdquo; in French output instead of becoming &ldquo;Code de Claude&rdquo;.</li>
+        </ul>
+
+        <h3>Other</h3>
+        <ul>
+          <li><strong>Update prompt foreground fix</strong> &mdash; clicking Check for Updates when an update exists now reliably brings Sparkle&rsquo;s &ldquo;Update Available&rdquo; window to the front instead of opening behind whatever app was frontmost when the network check finished.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Sat, 09 May 2026 11:28:04 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.11.0.dmg"
+        length="7142919"
+        type="application/octet-stream"
+        sparkle:edSignature="Zy77Hkt5EmoPrDRxuTA/4gRU1VZzbKi1glg/arKjThhzrvOmC7AZAZYn5X1igXFu97ev2uvuB/ALb5C6oLoYCg=="
+      />
+    </item>
+    <item>
       <title>Version 3.11.0-beta.4 (Early Bird)</title>
       <sparkle:version>51</sparkle:version>
       <sparkle:shortVersionString>3.11.0-beta.4</sparkle:shortVersionString>
