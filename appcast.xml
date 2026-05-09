@@ -6,6 +6,32 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.12.0-beta.3 (Early Bird)</title>
+      <sparkle:version>55</sparkle:version>
+      <sparkle:shortVersionString>3.12.0-beta.3</sparkle:shortVersionString>
+      <sparkle:channel>beta</sparkle:channel>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.12.0-beta.3 (Early Bird)</h2>
+        <p><em>Beta release. Visible only to users with &ldquo;Receive beta updates&rdquo; turned on in Settings &rarr; Updates.</em></p>
+        <p><strong>BYOK now wins over the managed proxy.</strong> Previously, if you had any active Sonotexta AI or Cloud subscription cached locally AND a BYOK key configured, the AI cleanup path silently routed through the Cloudflare Worker on <code>gpt-5-mini</code> instead of using your own key with your selected model. The debug log printed your selected model regardless, so the override was invisible. The translate engine on Sonotexta Cloud had the same shape: any Cloud subscriber went through the proxy even with a BYOK key.</p>
+        <ul>
+          <li>AI cleanup (<code>LLMService.postProcess</code>): proxy fires only when <code>hasManagedAI &amp;&amp; key.isEmpty</code>. Configured key always wins.</li>
+          <li>Realtime transcription (<code>OpenAIRealtimeEngine</code>): proxy fires only when <code>hasManagedCloud &amp;&amp; apiKey.isEmpty</code>. Same principle.</li>
+          <li>Native translation (<code>OpenAITranslateEngine</code>): same fix, symmetric with the regular realtime engine.</li>
+          <li>Honest logging: every dictation prints <code>route=direct|proxy</code> and the actual model that will run, so the route is auditable.</li>
+        </ul>
+        <p>Diagnosis credit: Codex via codex CLI &mdash; spotted the silent override pattern across all three call sites.</p>
+      ]]></description>
+      <pubDate>Sat, 09 May 2026 12:35:34 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.12.0-beta.3.dmg"
+        length="7147904"
+        type="application/octet-stream"
+        sparkle:edSignature="MyJVqwCye6RyuuSYsPBWOnORi/oa3sEoebuCXvnhPd1+wRAzSdA8NyDbI3eCb9nLWifN2p8eChsUBVfRER+tAA=="
+      />
+    </item>
+    <item>
       <title>Version 3.12.0-beta.2 (Early Bird)</title>
       <sparkle:version>54</sparkle:version>
       <sparkle:shortVersionString>3.12.0-beta.2</sparkle:shortVersionString>
