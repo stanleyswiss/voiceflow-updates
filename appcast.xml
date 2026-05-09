@@ -6,6 +6,32 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.11.0-beta.2 (Early Bird)</title>
+      <sparkle:version>49</sparkle:version>
+      <sparkle:shortVersionString>3.11.0-beta.2</sparkle:shortVersionString>
+      <sparkle:channel>beta</sparkle:channel>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.11.0-beta.2 (Early Bird)</h2>
+        <p><em>Beta release. Visible only to users with &ldquo;Receive beta updates&rdquo; turned on in Settings &rarr; Updates.</em></p>
+        <ul>
+          <li><strong>Symmetric stop-as-pause for the regular OpenAI Realtime engine.</strong> Beta.1 fixed only the translate engine; the regular transcription path still did an abrupt stop &rarr; commit, so users who released the hotkey before partial deltas appeared sometimes got nothing back. Now we send 1s of trailing zero PCM16 silence (5x 200ms via <code>input_audio_buffer.append</code>) BEFORE <code>input_audio_buffer.commit</code>, giving the server&rsquo;s VAD a clean utterance boundary to finalize against.</li>
+          <li><strong>Trailing-partial fallback.</strong> If the server still doesn&rsquo;t fire <code>conversation.item.input_audio_transcription.completed</code> within the 5s wait, any non-empty partial transcript is folded into the final delivery instead of being silently dropped.</li>
+          <li><strong>Correctness:</strong> <code>pendingCompletion</code> is now reset BEFORE the silence burst (matching the translate fix in beta.1) so a concurrent <code>completed</code> isn&rsquo;t clobbered.</li>
+          <li><strong>Stop-path diagnostics</strong> &mdash; T0 (stop pressed), T1 (silence sent), T2 (completed/timeout) timestamps in the console.</li>
+          <li>Same fix class as the 3.10.6 translate fix, applied to the symmetric half of the codebase.</li>
+        </ul>
+        <p>Diagnosis credit: Codex via codex CLI &mdash; spotted that the asymmetry was the cause of the &ldquo;need to wait until pill shows text before stopping&rdquo; pattern.</p>
+      ]]></description>
+      <pubDate>Sat, 09 May 2026 06:46:09 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.11.0-beta.2.dmg"
+        length="7109079"
+        type="application/octet-stream"
+        sparkle:edSignature="H6tniZAirsJKVLKvgGSTBEoq7l7wc8j8DCKgSzCd0QWp18BSZ2BIDBbMJgxxXn4nn+Oz8H6PxphCTJWyv0fpBg=="
+      />
+    </item>
+    <item>
       <title>Version 3.11.0-beta.1 (Early Bird)</title>
       <sparkle:version>48</sparkle:version>
       <sparkle:shortVersionString>3.11.0-beta.1</sparkle:shortVersionString>
