@@ -6,6 +6,50 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.12.0</title>
+      <sparkle:version>59</sparkle:version>
+      <sparkle:shortVersionString>3.12.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.12.0 &mdash; native translation on Cloud + reliable trailing-words</h2>
+        <p>Promotes the entire 3.12.0-beta.1..6 stack to stable. Two big-deal changes plus six rounds of polish.</p>
+
+        <h3>Native translation included with Sonotexta Cloud</h3>
+        <ul>
+          <li>Previously <code>gpt-realtime-translate</code> required your own OpenAI API key on every tier. <strong>Cloud subscribers ($14.99/mo) now get it included</strong> &mdash; the translate engine routes through the same Cloudflare Worker proxy as cloud transcription, gated to the Cloud plan server-side. BYOK on every tier continues to work as before.</li>
+        </ul>
+
+        <h3>Trailing words no longer lost on quick stop</h3>
+        <ul>
+          <li>If you spoke a sentence and pressed stop right at the end &mdash; before the translation had streamed back to the pill &mdash; the trailing words could be lost. Earlier versions sent a one-shot 1s burst of silence after stop, then waited for output deltas; that wasn&rsquo;t enough silence to push the trailing source audio through the model&rsquo;s ingestion.</li>
+          <li>Now we send zero-audio chunks at a 200ms cadence for up to 5 seconds, and exit only when BOTH the source-side input transcript AND the output translation deltas have been quiet for 1.5s. The trailing translation lands every time.</li>
+        </ul>
+
+        <h3>BYOK takes precedence over the managed proxy</h3>
+        <ul>
+          <li>If you have a configured OpenAI API key, AI cleanup and realtime engines now use it directly &mdash; even on a Cloud subscription. Previously the proxy silently overrode the key (running <code>gpt-5-mini</code> regardless of your model choice). Honest <code>route=direct|proxy</code> + <code>model=&lt;actual&gt;</code> log lines on every dictation so the routing is auditable.</li>
+        </ul>
+
+        <h3>LLM cleanup no longer back-translates already-translated text</h3>
+        <ul>
+          <li>When the realtime translate engine had already produced English from Bulgarian, the LLM cleanup pass was being told &ldquo;the speaker is dictating in Bulgarian&rdquo; and was back-translating the English to Bulgarian for the paste. Pill English, paste source-language. Fixed by passing the post-translation language to the cleanup prompt with an explicit &ldquo;do not translate&rdquo; instruction.</li>
+        </ul>
+
+        <h3>Other</h3>
+        <ul>
+          <li>Detailed translate-stop diagnostic logs (T0/T1/T2/T3, exit reason, silence chunks sent, final length).</li>
+          <li>Small worker fix: client &rarr; upstream WebSocket frames are queued until the upstream handshake completes. Previously they were dropped during the handshake window, which caused the translate session.update (target language) to be lost in some Cloud cases.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Sat, 09 May 2026 14:19:47 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.12.0.dmg"
+        length="7156195"
+        type="application/octet-stream"
+        sparkle:edSignature="3eYp63HqFozAUIMI/NyUThqu/kjfghQ/jfPBhSVKVG2p5OngBYocX71D9/lWRqh94fwalt4xQwdbhgD05kqvDQ=="
+      />
+    </item>
+    <item>
       <title>Version 3.12.0-beta.6 (Early Bird)</title>
       <sparkle:version>58</sparkle:version>
       <sparkle:shortVersionString>3.12.0-beta.6</sparkle:shortVersionString>
