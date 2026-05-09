@@ -6,6 +6,30 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.11.0-beta.3 (Early Bird)</title>
+      <sparkle:version>50</sparkle:version>
+      <sparkle:shortVersionString>3.11.0-beta.3</sparkle:shortVersionString>
+      <sparkle:channel>beta</sparkle:channel>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.11.0-beta.3 (Early Bird)</h2>
+        <p><em>Beta release. Visible only to users with &ldquo;Receive beta updates&rdquo; turned on in Settings &rarr; Updates.</em></p>
+        <p><strong>Fixes the &ldquo;translation stayed on the clipboard, never reached my app&rdquo; bug.</strong> Two independent root causes ganged up on the translate path:</p>
+        <ul>
+          <li><strong>Verified target activation.</strong> macOS 14+&rsquo;s cooperative-activation model can honor the deprecated <code>NSRunningApplication.activate()</code> at the WindowServer level without bringing the user&rsquo;s edited document window back to key. Combined with our previous blind 300ms sleep, that meant Cmd+V sometimes posted while Sonotexta&rsquo;s pill was still front, and the keystrokes landed nowhere visible. Now we use <code>activate(options: [.activateAllWindows])</code>, call <code>NSApp.yieldActivation(to:)</code> on macOS 14+ to defeat the focus-stealing heuristic, and POLL <code>frontmostApplication</code> for up to 600ms before pasting. If activation never lands, we surface that honestly as &ldquo;Copied &mdash; paste manually&rdquo; instead of pretending we delivered.</li>
+          <li><strong>Frozen session target.</strong> The translate path&rsquo;s longer post-stop window (silence padding + slider quiescence + AI cleanup) gave focus-stealing windows enough time to flip <code>lastTargetApp</code> mid-dictation and redirect the paste to the wrong app. Now <code>DictationManager</code> snapshots the target at <code>startDictation()</code> and passes that explicit reference all the way to the paste call &mdash; immune to mid-session app activations. Menu-bar &ldquo;Paste Last Dictation&rdquo; still follows live focus, as intended.</li>
+        </ul>
+        <p>Diagnosis credit: Codex flagged the snapshot-at-start race; the activation-verify layer was caught when the user reported the same symptom <em>without</em> any app switch &mdash; pointing at the activation layer, not the target tracking. Both fixes ship together.</p>
+      ]]></description>
+      <pubDate>Sat, 09 May 2026 07:00:46 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.11.0-beta.3.dmg"
+        length="7111964"
+        type="application/octet-stream"
+        sparkle:edSignature="pDUJEtJuU2HatRdcKDYmHRHzHOfX89Rl8N0cXHVjijaMl/nzx2yJUbqISTdLcEO8jDWmFs6MkDdS1iEUvHDVBQ=="
+      />
+    </item>
+    <item>
       <title>Version 3.11.0-beta.2 (Early Bird)</title>
       <sparkle:version>49</sparkle:version>
       <sparkle:shortVersionString>3.11.0-beta.2</sparkle:shortVersionString>
