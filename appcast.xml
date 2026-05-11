@@ -6,6 +6,29 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.13.0-beta.1 (Early Bird)</title>
+      <sparkle:version>60</sparkle:version>
+      <sparkle:shortVersionString>3.13.0-beta.1</sparkle:shortVersionString>
+      <sparkle:channel>beta</sparkle:channel>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.13.0-beta.1 (Early Bird)</h2>
+        <p><em>Beta release. Visible only to users with &ldquo;Receive beta updates&rdquo; turned on in Settings &rarr; Updates.</em></p>
+        <ul>
+          <li><strong>Better non-English recognition with Deepgram and Whisper.</strong> Sonotexta now passes the profile&rsquo;s input language to both engines. Bulgarian, Russian, Polish and other Cyrillic / Slavic dictations are no longer silently treated as English (Deepgram) or auto-detected as the wrong language (local Whisper).</li>
+          <li><strong>Per-profile engine overrides finally usable.</strong> Engine Settings now shows every engine&rsquo;s API key / model picker at all times. Previously, if your default engine was OpenAI but a profile overrode to Deepgram, the Deepgram API-key field was hidden &mdash; making the override unreachable.</li>
+          <li><strong>Cleanup prompt no longer leaks into your text.</strong> Fixes a case where a custom cleanup prompt could be echoed verbatim into the cleaned dictation. The prompt is now isolated as a style guide the model is forbidden to quote.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Mon, 11 May 2026 13:25:04 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.13.0-beta.1.dmg"
+        length="7158710"
+        type="application/octet-stream"
+        sparkle:edSignature="iKqjFNQlyZ80c4OxL/nND/HO08N0eAxGd+KBjAgRNDhy6uLoIn9+TvXh9Nt7EU8Z5dcqsWfr7FESeSTuo9rlBg=="
+      />
+    </item>
+    <item>
       <title>Version 3.12.0</title>
       <sparkle:version>59</sparkle:version>
       <sparkle:shortVersionString>3.12.0</sparkle:shortVersionString>
