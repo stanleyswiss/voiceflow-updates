@@ -6,6 +6,27 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.13.0</title>
+      <sparkle:version>61</sparkle:version>
+      <sparkle:shortVersionString>3.13.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.13.0</h2>
+        <ul>
+          <li><strong>Better non-English recognition with Deepgram and Whisper.</strong> Sonotexta now passes the profile&rsquo;s input language to both engines &mdash; Bulgarian, Russian, Polish and other Cyrillic / Slavic dictations land cleanly instead of being mis-detected.</li>
+          <li><strong>Per-profile engine overrides are usable.</strong> Engine Settings now shows every engine&rsquo;s API key and model picker at all times, so a profile that overrides to a different engine can reach its configuration.</li>
+          <li><strong>Cleanup prompt no longer leaks into your text.</strong> Custom cleanup prompts are isolated as a style guide the model is forbidden to quote.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Mon, 11 May 2026 15:29:44 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.13.0.dmg"
+        length="7158011"
+        type="application/octet-stream"
+        sparkle:edSignature="k3BZltAw0fBQK11hoeHLR482FSvzHc3LMIqnYhe+k4RPxOLa90Iv8R2fJ8HeBwa9iy75vAFB/zpa2P15RXS3Ag=="
+      />
+    </item>
+    <item>
       <title>Version 3.13.0-beta.1 (Early Bird)</title>
       <sparkle:version>60</sparkle:version>
       <sparkle:shortVersionString>3.13.0-beta.1</sparkle:shortVersionString>
