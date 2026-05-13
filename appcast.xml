@@ -6,6 +6,25 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.14.1</title>
+      <sparkle:version>74</sparkle:version>
+      <sparkle:shortVersionString>3.14.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.14.1</h2>
+        <ul>
+          <li><strong>Fixed: local Whisper double-paste when AI Post-Processing is off.</strong> A timing race caused the same text to land twice. Only affected Whisper with AI cleanup disabled; cloud engines were never affected.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Wed, 13 May 2026 16:40:08 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.14.1.dmg"
+        length="7262707"
+        type="application/octet-stream"
+        sparkle:edSignature="cm5TY6Ukg7LzAqiwj0w6YlsOC8HS0jtA/ru2TWDcvIxbWtMiTo1Qe9A+TmTgoTdnGV5S6KX0rUbQdio4lTtAAA=="
+      />
+    </item>
+    <item>
       <title>Version 3.14.1-beta.5 (Early Bird)</title>
       <sparkle:version>73</sparkle:version>
       <sparkle:shortVersionString>3.14.1-beta.5</sparkle:shortVersionString>
