@@ -6,6 +6,28 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.14.1-beta.4 (Early Bird)</title>
+      <sparkle:version>72</sparkle:version>
+      <sparkle:shortVersionString>3.14.1-beta.4</sparkle:shortVersionString>
+      <sparkle:channel>beta</sparkle:channel>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.14.1-beta.4 (Early Bird)</h2>
+        <p><em>Beta release. Visible only to users with &ldquo;Receive beta updates&rdquo; turned on in Settings &rarr; Updates.</em></p>
+        <ul>
+          <li><strong>Fixed: Whisper Large V3 Turbo now downloads.</strong> The previous build pointed at a model path with the wrong separator (a hyphen instead of an underscore before <em>turbo</em>) and HuggingFace couldn&rsquo;t find it. The path is corrected and any saved selection migrates automatically.</li>
+          <li><strong>Parakeet now shows size and a delete button when downloaded.</strong> Same affordance Whisper has &mdash; click the trash icon next to a ready Parakeet model to free up disk.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Wed, 13 May 2026 20:30:00 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.14.1-beta.4.dmg"
+        length="7263167"
+        type="application/octet-stream"
+        sparkle:edSignature="sAt6z0tXZQSIhgJT9Ys+NUpP558PfrnXQ7W7+76DCqFjlnOKEqc9fmqf8Vlh93sxA+mbFZouzNSGR08arl/JCg=="
+      />
+    </item>
+    <item>
       <title>Version 3.14.1-beta.3 (Early Bird)</title>
       <sparkle:version>71</sparkle:version>
       <sparkle:shortVersionString>3.14.1-beta.3</sparkle:shortVersionString>
