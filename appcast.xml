@@ -6,6 +6,30 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.13.2-beta.3 (Early Bird)</title>
+      <sparkle:version>65</sparkle:version>
+      <sparkle:shortVersionString>3.13.2-beta.3</sparkle:shortVersionString>
+      <sparkle:channel>beta</sparkle:channel>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.13.2-beta.3 (Early Bird)</h2>
+        <p><em>Beta release. Visible only to users with &ldquo;Receive beta updates&rdquo; turned on in Settings &rarr; Updates.</em></p>
+        <ul>
+          <li><strong>Engine settings is now unambiguous.</strong> Settings &rarr; Engine shows an &ldquo;Active default engine&rdquo; banner at the top and tags every engine&rsquo;s configuration block as either <em>Active</em> or <em>Profile-override only</em>. No more wondering which engine is actually the default.</li>
+          <li><strong>Settings persist immediately on change.</strong> Selecting a new engine or editing a profile now flushes to disk straightaway, so a quick app restart (or a Bluetooth-mic hang) can&rsquo;t lose your choice.</li>
+          <li><strong>Profile loading is resilient.</strong> A single corrupt or future-version profile no longer wipes every custom profile back to Default &mdash; the bad one is skipped, the rest are kept.</li>
+          <li><strong>Diagnostic logging.</strong> Every dictation logs the resolved profile, override, global engine, and effective engine to the Console &mdash; so if anything still falls back unexpectedly, support can see exactly why.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Wed, 13 May 2026 12:10:00 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.13.2-beta.3.dmg"
+        length="7239411"
+        type="application/octet-stream"
+        sparkle:edSignature="g2YV6MTE1J6iVm9rCPo9uqESZTZYaTeZul+DUBBsQan55GJwPr2XU9s2I9euUjvUJZPTGl6KkF6nZEvPOtgzCA=="
+      />
+    </item>
+    <item>
       <title>Version 3.13.2-beta.2 (Early Bird)</title>
       <sparkle:version>64</sparkle:version>
       <sparkle:shortVersionString>3.13.2-beta.2</sparkle:shortVersionString>
