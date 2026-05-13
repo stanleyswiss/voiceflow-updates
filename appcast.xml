@@ -6,6 +6,29 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.14.1-beta.2 (Early Bird)</title>
+      <sparkle:version>70</sparkle:version>
+      <sparkle:shortVersionString>3.14.1-beta.2</sparkle:shortVersionString>
+      <sparkle:channel>beta</sparkle:channel>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.14.1-beta.2 (Early Bird)</h2>
+        <p><em>Beta release. Visible only to users with &ldquo;Receive beta updates&rdquo; turned on in Settings &rarr; Updates.</em></p>
+        <ul>
+          <li><strong>The overlay no longer lies about delivery.</strong> Previously it flashed &ldquo;Delivered&rdquo; even when the text actually fell back to the clipboard (because the target app didn&rsquo;t become frontmost in time). It now shows the real outcome &mdash; <em>Delivered</em>, <em>Copied to clipboard &mdash; paste with &#8984;V</em>, or a clear error.</li>
+          <li><strong>Menu and menu-bar icon update promptly on stop.</strong> &ldquo;Stop Dictation&rdquo; flips back to &ldquo;Start Dictation&rdquo; as soon as the engine reports stop, not after AI cleanup and paste finish.</li>
+          <li><strong>Console diagnostics for the whole stop-to-paste flow.</strong> Filter Console.app for <code>[VoiceFlow][stop]</code> or <code>[VoiceFlow][deliver]</code> to see exactly which step took how long and what insertText returned.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Wed, 13 May 2026 18:45:00 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.14.1-beta.2.dmg"
+        length="7252113"
+        type="application/octet-stream"
+        sparkle:edSignature="PxcLEsDlUUXP5eUeEQrGRpSJ/spyFPyJgyjiMW1i+wFg1kxTeiO0chhsQ65BlUBHCXNyl1Sk3e1xKSiGm88MAw=="
+      />
+    </item>
+    <item>
       <title>Version 3.14.1-beta.1 (Early Bird)</title>
       <sparkle:version>69</sparkle:version>
       <sparkle:shortVersionString>3.14.1-beta.1</sparkle:shortVersionString>
