@@ -6,6 +6,28 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.13.2-beta.1 (Early Bird)</title>
+      <sparkle:version>63</sparkle:version>
+      <sparkle:shortVersionString>3.13.2-beta.1</sparkle:shortVersionString>
+      <sparkle:channel>beta</sparkle:channel>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.13.2-beta.1 (Early Bird)</h2>
+        <p><em>Beta release. Visible only to users with &ldquo;Receive beta updates&rdquo; turned on in Settings &rarr; Updates.</em></p>
+        <ul>
+          <li><strong>New STT engine: ElevenLabs Scribe v2 Realtime.</strong> Streaming cloud transcription at ~150ms latency, 90+ languages with best-in-class multilingual accuracy. Pro engine &mdash; bring your own ElevenLabs API key under Settings &rarr; Engine.</li>
+          <li><strong>Optional Vocabulary biasing for Scribe.</strong> When you turn it on, your glossary terms steer the STT model itself, not just the AI cleanup afterwards. Off by default; ElevenLabs adds a 20% per-minute cost when on.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Wed, 13 May 2026 10:30:00 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.13.2-beta.1.dmg"
+        length="7204747"
+        type="application/octet-stream"
+        sparkle:edSignature="yZC4b2EsTlzxkmb85yVV+Zn63gE77n6Rkf/c1dcm4g3xfEaJtFJk/j38RVCwFd0VO8Wg9xGnwlydNWz0QB4ECw=="
+      />
+    </item>
+    <item>
       <title>Version 3.13.1</title>
       <sparkle:version>62</sparkle:version>
       <sparkle:shortVersionString>3.13.1</sparkle:shortVersionString>
