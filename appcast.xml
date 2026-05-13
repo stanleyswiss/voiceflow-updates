@@ -6,6 +6,28 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.14.1-beta.3 (Early Bird)</title>
+      <sparkle:version>71</sparkle:version>
+      <sparkle:shortVersionString>3.14.1-beta.3</sparkle:shortVersionString>
+      <sparkle:channel>beta</sparkle:channel>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.14.1-beta.3 (Early Bird)</h2>
+        <p><em>Beta release. Visible only to users with &ldquo;Receive beta updates&rdquo; turned on in Settings &rarr; Updates.</em></p>
+        <ul>
+          <li><strong>Whisper: late ghost partials dropped.</strong> A periodic background transcription that finished after you pressed stop could overwrite the bubble&rsquo;s transcription with a stale snapshot, which sometimes presented as &ldquo;the text appeared twice.&rdquo; Those late emissions are now discarded.</li>
+          <li><strong>End-to-end paste-flow logging.</strong> Filter Console.app for <code>[VoiceFlow]</code> to see every <code>[whisper] partial emit</code>, <code>[whisper] final emit</code>, <code>[deliver] attempting insertText</code>, and <code>[paste] posting Cmd+V</code>. If text still appears twice, those lines will tell us exactly where the duplicate originates.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Wed, 13 May 2026 19:30:00 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.14.1-beta.3.dmg"
+        length="7260553"
+        type="application/octet-stream"
+        sparkle:edSignature="T3uYDHkeSc374ZvPLsA2qKyDWfL/1rhIOYo97SD8oBpv/3SXJajQr4upPF3LcANc6kzchJBPWiSsvOWgdi5+Ag=="
+      />
+    </item>
+    <item>
       <title>Version 3.14.1-beta.2 (Early Bird)</title>
       <sparkle:version>70</sparkle:version>
       <sparkle:shortVersionString>3.14.1-beta.2</sparkle:shortVersionString>
