@@ -6,6 +6,26 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.14.2</title>
+      <sparkle:version>75</sparkle:version>
+      <sparkle:shortVersionString>3.14.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.14.2</h2>
+        <ul>
+          <li><strong>Update checks now run every time the app starts.</strong> Previously Sonotexta only checked for updates on a timer and could miss a new version until hours after launch.</li>
+          <li><strong>Automatic update checks now happen every 4 hours</strong> instead of every 12.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Wed, 13 May 2026 18:40:00 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.14.2.dmg"
+        length="7262979"
+        type="application/octet-stream"
+        sparkle:edSignature="ofxPWEwtjpgnn2D/rv1VLCuwDIn4cD8Ew8XsdIhUVeGsoBW27sbBjPuvRmVFwoAbvAgNBW5dBIeystJApsD0Dw=="
+      />
+    </item>
+    <item>
       <title>Version 3.14.1</title>
       <sparkle:version>74</sparkle:version>
       <sparkle:shortVersionString>3.14.1</sparkle:shortVersionString>
