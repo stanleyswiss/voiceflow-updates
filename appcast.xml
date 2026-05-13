@@ -6,6 +6,27 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.13.2-beta.4 (Early Bird)</title>
+      <sparkle:version>66</sparkle:version>
+      <sparkle:shortVersionString>3.13.2-beta.4</sparkle:shortVersionString>
+      <sparkle:channel>beta</sparkle:channel>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.13.2-beta.4 (Early Bird)</h2>
+        <p><em>Beta release. Visible only to users with &ldquo;Receive beta updates&rdquo; turned on in Settings &rarr; Updates.</em></p>
+        <ul>
+          <li><strong>Bluetooth headsets now work reliably.</strong> When you start dictation on AirPods Max, AirPods Pro, or any Bluetooth headset, macOS flips the audio profile from A2DP to HFP/SCO within ~100ms &mdash; which auto-stops the audio engine and previously left Sonotexta stuck in &ldquo;Listening...&rdquo; with no audio flowing. Every engine (Apple Speech, Whisper, Parakeet, OpenAI Realtime, OpenAI Translate, Deepgram, ElevenLabs Scribe) now listens for that reconfiguration event and re-arms automatically. Up to 5 re-arms per session for misbehaving devices.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Wed, 13 May 2026 13:30:00 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.13.2-beta.4.dmg"
+        length="7249100"
+        type="application/octet-stream"
+        sparkle:edSignature="b0oJJW4dcjzc0dzxEUB/RFOeWNxqv2vF1GwSjeCbWz1WcjpuWFXWiPlbR2g46e8Nc7Sk3jbYvn1+NcJ0lpuwCg=="
+      />
+    </item>
+    <item>
       <title>Version 3.13.2-beta.3 (Early Bird)</title>
       <sparkle:version>65</sparkle:version>
       <sparkle:shortVersionString>3.13.2-beta.3</sparkle:shortVersionString>
