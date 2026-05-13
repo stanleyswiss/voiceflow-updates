@@ -6,6 +6,29 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.14.0</title>
+      <sparkle:version>68</sparkle:version>
+      <sparkle:shortVersionString>3.14.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.14.0</h2>
+        <ul>
+          <li><strong>Faster paste when stopping with Whisper.</strong> Local Whisper transcription no longer re-processes the whole recording on stop &mdash; if you pause briefly before pressing stop, the result lands instantly instead of waiting 5&ndash;15&nbsp;seconds.</li>
+          <li><strong>Better translation for Bulgarian, Czech and other non-English source languages.</strong> Apple Translation now uses the profile&rsquo;s actual input language instead of always assuming English. Unsupported language pairs are clearly flagged so you can switch on AI Post-Processing instead.</li>
+          <li><strong>OpenAI Realtime works for Cloud subscribers without their own key.</strong> Previously the engine refused to start unless you had pasted your own OpenAI API key, even though your subscription includes it.</li>
+          <li><strong>Translate engine gets a source-language hint.</strong> Native translation results are more reliable on short Bulgarian/Czech/Slovak utterances.</li>
+          <li><strong>Local Ollama stays local.</strong> Cloud subscribers who pick Ollama for privacy are no longer silently routed through the managed OpenAI proxy.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Wed, 13 May 2026 16:30:00 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.14.0.dmg"
+        length="7252323"
+        type="application/octet-stream"
+        sparkle:edSignature="Olmnb6deYBnNvdwobSIwD6GELMI8nEgG7+Qnx3Uke5lpOaQLE9i+hAiI5OwUTNoO/f+FKo8UXSGWLNQplDXsBA=="
+      />
+    </item>
+    <item>
       <title>Version 3.13.2</title>
       <sparkle:version>67</sparkle:version>
       <sparkle:shortVersionString>3.13.2</sparkle:shortVersionString>
