@@ -6,6 +6,27 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.14.3-beta.5 (Early Bird)</title>
+      <sparkle:version>80</sparkle:version>
+      <sparkle:shortVersionString>3.14.3-beta.5</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <sparkle:channel>beta</sparkle:channel>
+      <description><![CDATA[
+        <h2>Sonotexta 3.14.3-beta.5</h2>
+        <ul>
+          <li><strong>Auto-update now actually works.</strong> The real root cause: Sparkle's automatic-checks permission was never stored, leaving it in a permanently-off state. Added SUEnableAutomaticChecks=YES to Info.plist and force it true in code on launch — no more silent skips.</li>
+          <li><strong>Updates tab shows when the last check ran</strong> so you can confirm auto-checking is working without waiting for a new release.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Wed, 20 May 2026 13:20:00 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.14.3-beta.5.dmg"
+        length="7310437"
+        type="application/octet-stream"
+        sparkle:edSignature="edburE6SW31PTE4AkmKVBZRO7kTOnFT4Yp05HFLF9lULF8+pak/kTl5U1t2hxPARFNI7fWWgbYZQX3uWZS4nBw=="
+      />
+    </item>
+    <item>
       <title>Version 3.14.3-beta.4 (Early Bird)</title>
       <sparkle:version>79</sparkle:version>
       <sparkle:shortVersionString>3.14.3-beta.4</sparkle:shortVersionString>
