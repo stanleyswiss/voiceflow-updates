@@ -6,6 +6,29 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.14.3-beta.4 (Early Bird)</title>
+      <sparkle:version>79</sparkle:version>
+      <sparkle:shortVersionString>3.14.3-beta.4</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <sparkle:channel>beta</sparkle:channel>
+      <description><![CDATA[
+        <h2>Sonotexta 3.14.3-beta.4</h2>
+        <ul>
+          <li><strong>DeepL Translate support.</strong> Add your own DeepL API key in AI Settings. Falls back to Apple Translation if no key is set.</li>
+          <li><strong>Translation backend now visible in profile settings.</strong> The Output Language section shows whether DeepL or Apple Translate is active, and clarifies that the "OpenAI Realtime" toggle only applies to that engine — all others use the DeepL/Apple path automatically.</li>
+          <li><strong>Auto-update check fires on every launch.</strong></li>
+          <li><strong>Test button for every API key</strong> — Deepgram, ElevenLabs, and DeepL.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Wed, 20 May 2026 12:45:00 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.14.3-beta.4.dmg"
+        length="7304178"
+        type="application/octet-stream"
+        sparkle:edSignature="0GFZqEVq2p1XLUFV0oB/REs0YUNAEoo3rmkkUlU9tTsgx4lPSiVMYUHFvuDAljk28n+hGl08NJGA2UbA+9GIDA=="
+      />
+    </item>
+    <item>
       <title>Version 3.14.3-beta.3 (Early Bird)</title>
       <sparkle:version>78</sparkle:version>
       <sparkle:shortVersionString>3.14.3-beta.3</sparkle:shortVersionString>
