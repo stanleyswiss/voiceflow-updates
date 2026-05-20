@@ -6,6 +6,29 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.15.0 beta 1 (Early Bird)</title>
+      <sparkle:version>82</sparkle:version>
+      <sparkle:shortVersionString>3.15.0-beta.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <sparkle:channel>beta</sparkle:channel>
+      <description><![CDATA[
+        <h2>Sonotexta 3.15.0 beta 1</h2>
+        <ul>
+          <li>Redesigned Settings: five clearer tabs — Dictation, Profiles, Connections, AI &amp; Language, About &amp; Stats.</li>
+          <li>New Connections tab puts every API key on one page with inline Test and Remove buttons.</li>
+          <li>System / Light / Dark theme picker in Dictation → Appearance.</li>
+          <li>First-run wizard for new installs; What's-new sheet on first launch for upgraders.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Wed, 20 May 2026 16:20:34 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.15.0-beta.1.dmg"
+        length="7481511"
+        type="application/octet-stream"
+        sparkle:edSignature="psZaI71kSYtxCfE2725pSOgdE11A/3OZOonNyW0zKw3u3x82oV2lCbA4SHZWF7kfM0JjJhHHDVaknveQYV4dDg=="
+      />
+    </item>
+    <item>
       <title>Version 3.14.3</title>
       <sparkle:version>81</sparkle:version>
       <sparkle:shortVersionString>3.14.3</sparkle:shortVersionString>
