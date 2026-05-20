@@ -6,6 +6,28 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.14.3</title>
+      <sparkle:version>81</sparkle:version>
+      <sparkle:shortVersionString>3.14.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.14.3</h2>
+        <ul>
+          <li><strong>DeepL translation support.</strong> Add your own DeepL API key in AI Settings for higher-quality translation on any macOS version.</li>
+          <li><strong>Test buttons for every API key</strong> — Deepgram, ElevenLabs Scribe, and DeepL now show ✓/✗ inline.</li>
+          <li><strong>Auto-update fixed.</strong> Updates now check automatically on every launch.</li>
+          <li><strong>Updates tab</strong> shows when the last automatic check ran.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Wed, 20 May 2026 13:57:21 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.14.3.dmg"
+        length="7310793"
+        type="application/octet-stream"
+        sparkle:edSignature="n6hcJtWCciVie37m1mf+2RyLT6baNdNgL9KoRamE9cuBv0rrAVjFy6XkUG2w4XtSKFMr0UeUFpIWWo8D/vg5Aw=="
+      />
+    </item>
+    <item>
       <title>Version 3.14.3-beta.5 (Early Bird)</title>
       <sparkle:version>80</sparkle:version>
       <sparkle:shortVersionString>3.14.3-beta.5</sparkle:shortVersionString>
