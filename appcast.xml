@@ -6,6 +6,28 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.16.0</title>
+      <sparkle:version>89</sparkle:version>
+      <sparkle:shortVersionString>3.16.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.16.0</h2>
+        <ul>
+          <li>New "Parakeet Live (English)" engine — fastest offline English dictation with live preview as you speak.</li>
+          <li>Picks between 160ms and 320ms chunk sizes in Settings → Dictation, trading latency for accuracy.</li>
+          <li>Launch-time update popup now appears when an update is available (was silently skipped on 3.15.x).</li>
+          <li>Existing Parakeet TDT v3 multilingual engine unchanged.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Tue, 26 May 2026 08:42:00 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.16.0.dmg"
+        length="7530629"
+        type="application/octet-stream"
+        sparkle:edSignature="q5WRtka9QcRCFalvims8vUikOPnvxKCNYPniAQl3RyFVLDzw4OwZuzw8YcKr/OVeHBoqDSPUOLRnlGdZk9dgBg=="
+      />
+    </item>
+    <item>
       <title>Version 3.16.0 beta 3</title>
       <sparkle:version>88</sparkle:version>
       <sparkle:shortVersionString>3.16.0-beta.3</sparkle:shortVersionString>
