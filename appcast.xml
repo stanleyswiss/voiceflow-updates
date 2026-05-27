@@ -6,6 +6,28 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.16.1 beta 2</title>
+      <sparkle:version>91</sparkle:version>
+      <sparkle:shortVersionString>3.16.1-beta.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <sparkle:channel>beta</sparkle:channel>
+      <description><![CDATA[
+        <h2>Sonotexta 3.16.1 beta 2</h2>
+        <ul>
+          <li>Fixes an audio-engine FormatNotSupported error when a USB microphone (including webcam mics) is selected as the input device in Sonotexta's settings.</li>
+          <li>Improves diagnostic log capture from Terminal (stdout is now line-buffered).</li>
+          <li>Beta build — if you were hit by "dictation cuts off after a few seconds with no transcription," please try again with this build.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Wed, 27 May 2026 20:08:00 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.16.1-beta.2.dmg"
+        length="7573794"
+        type="application/octet-stream"
+        sparkle:edSignature="Y8OXck8UHZNNCNm2Q5cz6+KzKUtnsqbZh60LLzJgFuIyR8H1UCwFxxqWvLxwGGbvi0LDJc6KQTSw5qL9cu63Cg=="
+      />
+    </item>
+    <item>
       <title>Version 3.16.1 beta 1</title>
       <sparkle:version>90</sparkle:version>
       <sparkle:shortVersionString>3.16.1-beta.1</sparkle:shortVersionString>
