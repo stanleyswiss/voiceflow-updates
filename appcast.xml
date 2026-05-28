@@ -6,6 +6,29 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.16.1 beta 3</title>
+      <sparkle:version>92</sparkle:version>
+      <sparkle:shortVersionString>3.16.1-beta.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <sparkle:channel>beta</sparkle:channel>
+      <description><![CDATA[
+        <h2>Sonotexta 3.16.1 beta 3</h2>
+        <ul>
+          <li>Fixes Whisper returning empty transcripts on English audio when input language is set to Auto.</li>
+          <li>Adds diagnostic detail to the audio-engine logs so any remaining microphone issues are easier to triage.</li>
+          <li>Known limitation on macOS Tahoe: some USB microphones (including some webcam mics) fail with a -10868 error when set as Sonotexta's per-app input override. Workaround: clear the per-app override in Sonotexta's settings and choose your microphone in System Settings → Sound → Input instead.</li>
+          <li>Beta build — please test on both built-in and external microphones.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Thu, 28 May 2026 05:10:24 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.16.1-beta.3.dmg"
+        length="7579070"
+        type="application/octet-stream"
+        sparkle:edSignature="fJ/vbKSkYxlOxkWowjzRFBFAeZzsobgMmUen1EMRUQMGKgePhWotFpBnNJYFo7eCkwzG4oRZD69TLIQ1AtWwAQ=="
+      />
+    </item>
+    <item>
       <title>Version 3.16.1 beta 2</title>
       <sparkle:version>91</sparkle:version>
       <sparkle:shortVersionString>3.16.1-beta.2</sparkle:shortVersionString>
