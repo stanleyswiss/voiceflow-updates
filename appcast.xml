@@ -6,6 +6,28 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.16.1</title>
+      <sparkle:version>94</sparkle:version>
+      <sparkle:shortVersionString>3.16.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.16.1</h2>
+        <ul>
+          <li>Fixes a crash on macOS 26.3.1 (Tahoe) when starting dictation with any engine — thanks to Blaine for testing the fix end-to-end on his hardware.</li>
+          <li>Fixes Whisper returning empty transcripts on English audio when input language is set to Auto.</li>
+          <li>Updates now always ask before installing — no more silent installs on relaunch.</li>
+          <li>Known limitation on macOS Tahoe: some USB microphones (including some webcam mics) may fail when set as Sonotexta's per-app input override. Workaround: choose your microphone in System Settings → Sound → Input.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Sun, 31 May 2026 09:08:18 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.16.1.dmg"
+        length="7579615"
+        type="application/octet-stream"
+        sparkle:edSignature="lL3ry0WiYqHI0ZHbWoH/YmLNxILQPwE7zxJarDsYxQx2vTjR5I67OZ3qoQFDstjxf78A8ZxkVJpwXS6NJaVxDQ=="
+      />
+    </item>
+    <item>
       <title>Version 3.16.1 beta 4</title>
       <sparkle:version>93</sparkle:version>
       <sparkle:shortVersionString>3.16.1-beta.4</sparkle:shortVersionString>
