@@ -6,6 +6,25 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.16.2</title>
+      <sparkle:version>96</sparkle:version>
+      <sparkle:shortVersionString>3.16.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.16.2</h2>
+        <ul>
+          <li>Fixes translation profiles that set a specific input language (for example English to German) translating into the wrong language. They now translate into the language you selected.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Sun, 14 Jun 2026 08:45:32 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.16.2.dmg"
+        length="7577760"
+        type="application/octet-stream"
+        sparkle:edSignature="hnAhlOVA0TtmZFAy9crIYWgz4Vu74Pwl2NLTB9k/CP3vjV0SfTvssr5zgKKRnYKN9TN/WM7FGIb0kEX4bg/uDQ=="
+      />
+    </item>
+    <item>
       <title>Version 3.16.2 beta 1</title>
       <sparkle:version>95</sparkle:version>
       <sparkle:shortVersionString>3.16.2-beta.1</sparkle:shortVersionString>
