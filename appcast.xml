@@ -6,6 +6,31 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.16.3 beta 1</title>
+      <sparkle:version>97</sparkle:version>
+      <sparkle:shortVersionString>3.16.3-beta.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <sparkle:channel>beta</sparkle:channel>
+      <description><![CDATA[
+        <h2>Sonotexta 3.16.3 beta 1</h2>
+        <p><strong>⚠️ One-time manual update required.</strong> If installing this update fails with "The update is improperly signed", that is expected — the update signing key had to be replaced. Please download this version once from
+        <a href="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.16.3-beta.1.dmg">this link</a> and drag it into Applications. Automatic updates work normally from then on.</p>
+        <ul>
+          <li>New: Start at login — Sonotexta can launch automatically after a restart. Enable it in Settings → Dictation → Startup.</li>
+          <li>The menu bar now shows the active profile and the engine it will use, so you can always see what applies before you dictate.</li>
+          <li>Settings clarity pass: outdated hints now point to the right tabs, and the engine section explains that model choices are shared by all profiles.</li>
+          <li>Fixed: the "What's new" panel was stuck on 3.15 content for upgraders.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Sun, 12 Jul 2026 10:43:26 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.16.3-beta.1.dmg"
+        length="7589436"
+        type="application/octet-stream"
+        sparkle:edSignature="y8Yjc+AkgRwzUqZ97p4Og/cRIuJ0X2JG2lJ086+ovDUCf/SFZSAj8wDPO7/M1oaB1enNd1z0/s8aOOuUTcdqBg=="
+      />
+    </item>
+    <item>
       <title>Version 3.16.2</title>
       <sparkle:version>96</sparkle:version>
       <sparkle:shortVersionString>3.16.2</sparkle:shortVersionString>
