@@ -6,6 +6,30 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.16.3 beta 1</title>
+      <sparkle:version>97</sparkle:version>
+      <sparkle:shortVersionString>3.16.3-beta.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <sparkle:channel>beta</sparkle:channel>
+      <description><![CDATA[
+        <h2>Sonotexta 3.16.3 beta 1</h2>
+        <ul>
+          <li>New: Start at login — Sonotexta can launch automatically after a restart. Enable it in Settings → Dictation → Startup.</li>
+          <li>The menu bar now shows the active profile and the engine it will use, so you can always see what applies before you dictate.</li>
+          <li>Settings clarity pass: outdated hints pointing to the old "AI tab" now point to the right place, and the engine section explains that model choices are shared by all profiles.</li>
+          <li>Fixed: the "What's new" panel was stuck on 3.15 content for upgraders.</li>
+          <li>Beta build — please confirm Sonotexta launches automatically after a restart once the toggle is on.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Sun, 12 Jul 2026 10:12:17 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.16.3-beta.1.dmg"
+        length="7589377"
+        type="application/octet-stream"
+        sparkle:edSignature="FKmqbRCGOojFp+Y5pLg0du3Pnb0YgoARMRMX1TX5xkp4mNqa3WagE5qgybTfg4Th35z36TslR9qnBL6+E4sDDA=="
+      />
+    </item>
+    <item>
       <title>Version 3.16.2</title>
       <sparkle:version>96</sparkle:version>
       <sparkle:shortVersionString>3.16.2</sparkle:shortVersionString>
