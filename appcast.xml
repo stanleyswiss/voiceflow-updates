@@ -6,6 +6,35 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.16.3</title>
+      <sparkle:version>99</sparkle:version>
+      <sparkle:shortVersionString>3.16.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.16.3</h2>
+        <p><strong>⚠️ One-time manual update required.</strong> If installing this update fails with
+        "The update is improperly signed", that is expected: the update signing key had to be
+        replaced in this release. Please download Sonotexta once from
+        <a href="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.16.3.dmg">this link</a>
+        and drag it into Applications (your settings and license are kept). Automatic updates work
+        normally from then on — apologies for the extra step.</p>
+        <ul>
+          <li>New: <strong>Start at login</strong> — Sonotexta launches automatically after a restart. Enable it in Settings → Dictation → Startup.</li>
+          <li>New OpenAI transcription models: <strong>Transcribe</strong> (more accurate and cheaper than the previous generation) and <strong>Live Transcribe</strong> (lowest latency). Your previous model choice migrates automatically.</li>
+          <li>Vocabulary terms now bias the OpenAI engine directly as free keyword hints.</li>
+          <li>The menu bar shows the active profile and the engine it will use, so you always know what applies before you dictate.</li>
+          <li>Settings clarity pass and a fixed "What's new" panel for upgraders.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Sat, 01 Aug 2026 07:06:49 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.16.3.dmg"
+        length="7591804"
+        type="application/octet-stream"
+        sparkle:edSignature="pXE91+/7J8JTFeoSe8x9GRbEkqRyo0LgmBxU6MTnhDB/bDeTLoxgGvMrIaEq7hUEmlS3jTaLc5Nkt0K+nuKDBw=="
+      />
+    </item>
+    <item>
       <title>Version 3.16.3 beta 2</title>
       <sparkle:version>98</sparkle:version>
       <sparkle:shortVersionString>3.16.3-beta.2</sparkle:shortVersionString>
