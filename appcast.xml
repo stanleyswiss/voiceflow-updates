@@ -6,6 +6,30 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.16.3 beta 2</title>
+      <sparkle:version>98</sparkle:version>
+      <sparkle:shortVersionString>3.16.3-beta.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <sparkle:channel>beta</sparkle:channel>
+      <description><![CDATA[
+        <h2>Sonotexta 3.16.3 beta 2</h2>
+        <ul>
+          <li>New OpenAI transcription models: <strong>Transcribe</strong> (more accurate and 25% cheaper than the previous generation) and <strong>Live Transcribe</strong> (lowest latency, text as you speak). Your previous model choice migrates automatically.</li>
+          <li>Your Vocabulary terms now bias the OpenAI engine directly as keyword hints — free accuracy boost for product names and technical terms.</li>
+          <li>Profiles with a pinned input language pass it to the OpenAI engine as a language hint.</li>
+        </ul>
+        <p>If updating from 3.16.2 or older and you see "The update is improperly signed", download once from
+        <a href="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.16.3-beta.2.dmg">this link</a> — automatic updates resume afterwards (signing key was replaced in 3.16.3).</p>
+      ]]></description>
+      <pubDate>Sat, 01 Aug 2026 05:56:33 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.16.3-beta.2.dmg"
+        length="7591823"
+        type="application/octet-stream"
+        sparkle:edSignature="H1ruePKPn7yl8WT7yg8Cz9V+RCqECzH7TFBS0fei0PfDVumkifiCmyi0PA+u/6nOEnWi6TeKUncgie4T57SLDQ=="
+      />
+    </item>
+    <item>
       <title>Version 3.16.3 beta 1</title>
       <sparkle:version>97</sparkle:version>
       <sparkle:shortVersionString>3.16.3-beta.1</sparkle:shortVersionString>
