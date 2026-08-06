@@ -6,6 +6,28 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.16.4 beta 1</title>
+      <sparkle:version>100</sparkle:version>
+      <sparkle:shortVersionString>3.16.4-beta.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <sparkle:channel>beta</sparkle:channel>
+      <description><![CDATA[
+        <h2>Sonotexta 3.16.4 beta 1</h2>
+        <ul>
+          <li>Microphone resilience: if your selected input device can't start (e.g. some USB webcam mics on macOS Tahoe), Sonotexta now automatically falls back to the system default microphone for that session and shows "Listening (default mic)…" in the overlay — instead of silently capturing nothing and closing.</li>
+          <li>Engine errors during final transcription are now logged clearly, making support logs far more useful.</li>
+          <li>Beta build — if you have a USB mic set as Sonotexta's input override, please test dictation and tell us whether the fallback notice appears.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Thu, 06 Aug 2026 13:52:19 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.16.4-beta.1.dmg"
+        length="7599524"
+        type="application/octet-stream"
+        sparkle:edSignature="PM43QwMLMKhU2bsch6znUZmq64fcJGVA3NabhLmgTCzF9aHb0EvEjey5rh6pAkKGxa5NZUek4ifaT4WfKKGwAA=="
+      />
+    </item>
+    <item>
       <title>Version 3.16.3</title>
       <sparkle:version>99</sparkle:version>
       <sparkle:shortVersionString>3.16.3</sparkle:shortVersionString>
