@@ -6,6 +6,26 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.16.5 beta 2</title>
+      <sparkle:version>105</sparkle:version>
+      <sparkle:shortVersionString>3.16.5-beta.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <sparkle:channel>beta</sparkle:channel>
+      <description><![CDATA[
+        <h2>Sonotexta 3.16.5 beta 2</h2>
+        <ul>
+          <li><strong>Fixed: custom AI presets were silently truncated to 200 characters</strong> — long presets could turn AI cleanup into a no-op that returned your text unchanged. Full presets (up to 4,000 characters, line breaks preserved) now reach the model intact. If AI processing ever seemed to "do nothing", this was why. Thanks Blaine for the razor-sharp report!</li>
+        </ul>
+      ]]></description>
+      <pubDate>Mon, 10 Aug 2026 18:44:51 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.16.5-beta.2.dmg"
+        length="7663813"
+        type="application/octet-stream"
+        sparkle:edSignature="L65HGycyxb9eTPgb3SIsDRJNf84p1/PKTCuyuQXgpaMOj2cS0VFKo9N6kvP5oClmdy7dJcvtRcqiBQ/uKYSxBw=="
+      />
+    </item>
+    <item>
       <title>Version 3.16.5 beta 1</title>
       <sparkle:version>104</sparkle:version>
       <sparkle:shortVersionString>3.16.5-beta.1</sparkle:shortVersionString>
