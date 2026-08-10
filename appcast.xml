@@ -6,6 +6,29 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.16.5 beta 1</title>
+      <sparkle:version>104</sparkle:version>
+      <sparkle:shortVersionString>3.16.5-beta.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <sparkle:channel>beta</sparkle:channel>
+      <description><![CDATA[
+        <h2>Sonotexta 3.16.5 beta 1</h2>
+        <ul>
+          <li><strong>Multiple dictation shortcuts</strong> — set up several keys, each activating its own profile and mode (toggle or hold-to-talk). E.g. Right ⌥ held down for quick snippets, ⌃⇧D for long-form dictation that gets AI-formatted. Configure under Settings → Dictation → Dictation Shortcuts. Your existing shortcut carries over unchanged.</li>
+          <li><strong>No more lost first words</strong>: when a local model (Whisper, Parakeet, Parakeet Live) still needs to load, Sonotexta now records while it loads and transcribes everything once ready — previously the first seconds were dropped.</li>
+          <li>Settings tip for Parakeet Live's lowercase output (enable AI processing in your profile for punctuation and capitalization).</li>
+          <li>Beta build — feedback welcome on the new shortcuts table (thanks Blaine for both ideas!).</li>
+        </ul>
+      ]]></description>
+      <pubDate>Mon, 10 Aug 2026 18:08:50 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.16.5-beta.1.dmg"
+        length="7661705"
+        type="application/octet-stream"
+        sparkle:edSignature="zSTolFpPJANwviss6FGJBvX0+k/4gBcGpcnhbwt6+sUuqGGFlv8Iq3RK4ucCA/7MMOoYuqIY3R48PTk+zV37Dw=="
+      />
+    </item>
+    <item>
       <title>Version 3.16.4</title>
       <sparkle:version>103</sparkle:version>
       <sparkle:shortVersionString>3.16.4</sparkle:shortVersionString>
