@@ -6,6 +6,26 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.16.4 beta 2</title>
+      <sparkle:version>101</sparkle:version>
+      <sparkle:shortVersionString>3.16.4-beta.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <sparkle:channel>beta</sparkle:channel>
+      <description><![CDATA[
+        <h2>Sonotexta 3.16.4 beta 2</h2>
+        <ul>
+          <li>New AI post-processing model: <strong>GPT-5.6 Luna</strong> — OpenAI's newest budget model (suggested by a beta tester, thanks Blaine!). Pick it in Settings → AI &amp; Language → Model. Note: slightly pricier than GPT-5 Nano per token, but the newest generation — great for cleaning up lowercase/unpunctuated output from local engines like Parakeet Live.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Mon, 10 Aug 2026 17:32:25 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.16.4-beta.2.dmg"
+        length="7599436"
+        type="application/octet-stream"
+        sparkle:edSignature="aLKVLocMuiyPcznqWsiTKs6/v/799QesHlrsYYwvoL+m00Swlovys7PRqlGwVxj/XWBd0/ZZt09PiHQCkcvfAw=="
+      />
+    </item>
+    <item>
       <title>Version 3.16.4 beta 1</title>
       <sparkle:version>100</sparkle:version>
       <sparkle:shortVersionString>3.16.4-beta.1</sparkle:shortVersionString>
