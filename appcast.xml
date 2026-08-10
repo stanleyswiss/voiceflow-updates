@@ -6,6 +6,27 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.16.4 beta 3</title>
+      <sparkle:version>102</sparkle:version>
+      <sparkle:shortVersionString>3.16.4-beta.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <sparkle:channel>beta</sparkle:channel>
+      <description><![CDATA[
+        <h2>Sonotexta 3.16.4 beta 3</h2>
+        <ul>
+          <li>New dictation key option: <strong>Right Option (⌥)</strong> — pick it in Settings → Dictation → Hotkey. Perfect for hold-to-talk: hold the right ⌥ while speaking, release to stop. No System Settings changes needed (another beta-tester request — thanks Blaine!).</li>
+          <li>Tip: choose it only if you don't type special characters with the right ⌥ key — the left one keeps working normally either way.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Mon, 10 Aug 2026 17:43:24 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.16.4-beta.3.dmg"
+        length="7607163"
+        type="application/octet-stream"
+        sparkle:edSignature="B+PLctUuRlp03R0zSOR4Kd+ZiW7tyFkhrSSE6u8t5DUY07jzL7VHTMigWlhCV+lAw2ocW5NL/hXEkycfoqreDA=="
+      />
+    </item>
+    <item>
       <title>Version 3.16.4 beta 2</title>
       <sparkle:version>101</sparkle:version>
       <sparkle:shortVersionString>3.16.4-beta.2</sparkle:shortVersionString>
