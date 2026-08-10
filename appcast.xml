@@ -6,6 +6,34 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.16.4</title>
+      <sparkle:version>103</sparkle:version>
+      <sparkle:shortVersionString>3.16.4</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.16.4</h2>
+        <p><strong>⚠️ Updating from 3.16.2 or older?</strong> If this update fails with
+        "The update is improperly signed", that is expected — the update signing key was
+        replaced in 3.16.3. Download Sonotexta once from
+        <a href="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.16.4.dmg">this link</a>
+        and drag it into Applications (settings and license are kept). Automatic updates
+        work normally from then on.</p>
+        <ul>
+          <li>New dictation key option: <strong>Right Option (⌥)</strong> — hold-to-talk friendly, no System Settings changes needed. Pick it in Settings → Dictation → Hotkey.</li>
+          <li><strong>Microphone resilience</strong>: if your selected input device can't start (e.g. some USB webcam mics on macOS Tahoe), Sonotexta falls back to the system default mic and shows "Listening (default mic)…" — instead of failing silently.</li>
+          <li>New AI post-processing model: <strong>GPT-5.6 Luna</strong> — OpenAI's newest budget model.</li>
+          <li>Clearer engine error logging for faster support.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Mon, 10 Aug 2026 17:54:01 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.16.4.dmg"
+        length="7610115"
+        type="application/octet-stream"
+        sparkle:edSignature="OrnX1flgUcNtg0an8VyeXdgBwlC25CRlzfHE9cc7+m+XM6GpeZAGKXOgqj92yTRR5+qp/+vSSMyHxDIWW3lGDw=="
+      />
+    </item>
+    <item>
       <title>Version 3.16.4 beta 3</title>
       <sparkle:version>102</sparkle:version>
       <sparkle:shortVersionString>3.16.4-beta.3</sparkle:shortVersionString>
