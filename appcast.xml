@@ -6,6 +6,27 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.16.5 beta 3</title>
+      <sparkle:version>106</sparkle:version>
+      <sparkle:shortVersionString>3.16.5-beta.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <sparkle:channel>beta</sparkle:channel>
+      <description><![CDATA[
+        <h2>Sonotexta 3.16.5 beta 3</h2>
+        <ul>
+          <li><strong>Fixed: GPT-5.6 Luna silently failing.</strong> Luna rejects a request parameter the older GPT-5 family accepts, so every AI cleanup with Luna selected errored quietly and delivered your raw text unchanged — this also masked preset differences and left Parakeet Live output lowercase. Luna now works for real (and there's a regression test so it stays that way).</li>
+          <li>If AI cleanup ever seemed to do nothing on recent versions, it was this + the preset-truncation bug from beta 2 — both are now fixed. Update, keep your model selection, and dictation cleanup should visibly apply your preset.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Tue, 11 Aug 2026 04:50:26 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.16.5-beta.3.dmg"
+        length="7662413"
+        type="application/octet-stream"
+        sparkle:edSignature="79ozIpu7eu4ULqfti1QWH7ZANRoV7PHaTDvX6Y62c6OdQQiAffk590YY+6s9tyZUNBxl9zOMMmk2Jq5vmZ+IBA=="
+      />
+    </item>
+    <item>
       <title>Version 3.16.5 beta 2</title>
       <sparkle:version>105</sparkle:version>
       <sparkle:shortVersionString>3.16.5-beta.2</sparkle:shortVersionString>
