@@ -6,6 +6,33 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.16.5</title>
+      <sparkle:version>107</sparkle:version>
+      <sparkle:shortVersionString>3.16.5</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.16.5</h2>
+        <p><strong>⚠️ Updating from 3.16.2 or older?</strong> If this update fails with
+        "The update is improperly signed", that is expected — the update signing key was
+        replaced in 3.16.3. Download Sonotexta once from
+        <a href="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.16.5.dmg">this link</a>
+        and drag it into Applications (settings and license are kept). Automatic updates
+        work normally from then on.</p>
+        <ul>
+          <li><strong>Multiple dictation shortcuts</strong> — bind several keys, each activating its own profile and mode (toggle or hold-to-talk). One key for quick snippets, another for long-form dictation with AI formatting. Set up under Settings → Dictation → Dictation Shortcuts.</li>
+          <li><strong>No more lost first words</strong> — when a local model (Whisper, Parakeet, Parakeet Live) still needs to load, Sonotexta records while it loads and transcribes everything once ready.</li>
+          <li><strong>AI cleanup fixed on every engine</strong> — two silent failures resolved: long custom presets were truncated to 200 characters, and GPT-5.6 Luna rejected our requests. Your presets now visibly apply, including capitalization and punctuation for Parakeet Live.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Wed, 12 Aug 2026 14:07:08 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.16.5.dmg"
+        length="7662357"
+        type="application/octet-stream"
+        sparkle:edSignature="6HbecE1C0qLqoubJwVWskPKJc0dXKnNy5jD6+BJwzLMrg+jN6lXkcBGgAm7v0/AB6L0UJvqX3LgvGE8iathgAw=="
+      />
+    </item>
+    <item>
       <title>Version 3.16.5 beta 3</title>
       <sparkle:version>106</sparkle:version>
       <sparkle:shortVersionString>3.16.5-beta.3</sparkle:shortVersionString>
