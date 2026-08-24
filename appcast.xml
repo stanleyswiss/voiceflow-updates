@@ -6,6 +6,27 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.16.6 beta 1</title>
+      <sparkle:version>108</sparkle:version>
+      <sparkle:shortVersionString>3.16.6-beta.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <sparkle:channel>beta</sparkle:channel>
+      <description><![CDATA[
+        <h2>Sonotexta 3.16.6 beta 1</h2>
+        <ul>
+          <li><strong>Choose where model weights live</strong> — point Whisper and Parakeet downloads at any folder, e.g. an external drive (Settings → Dictation → Model Storage). Existing models are moved over automatically, and if the drive is disconnected Sonotexta tells you instead of quietly re-downloading gigabytes to your system disk. (Another beta-tester request — thanks Blaine!)</li>
+          <li><strong>AI cleanup failures are now loud</strong> — a clear overlay message when raw text is delivered, a persistent menu-bar warning until the next successful cleanup, and a visible reason whenever dictation can't start. No more silent failures.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Mon, 24 Aug 2026 20:15:40 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.16.6-beta.1.dmg"
+        length="7690437"
+        type="application/octet-stream"
+        sparkle:edSignature="x6mH8cjW8IVE00NB1y5EjUYvkSSESZUmLwYXWuJxMCKJeo3AJxVLJoneBfx0AXkrSv9cFLdlMfbFqotqT0wcBw=="
+      />
+    </item>
+    <item>
       <title>Version 3.16.5</title>
       <sparkle:version>107</sparkle:version>
       <sparkle:shortVersionString>3.16.5</sparkle:shortVersionString>
