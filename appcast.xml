@@ -6,6 +6,31 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.16.6 beta 2</title>
+      <sparkle:version>109</sparkle:version>
+      <sparkle:shortVersionString>3.16.6-beta.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <sparkle:channel>beta</sparkle:channel>
+      <description><![CDATA[
+        <h2>Sonotexta 3.16.6 beta 2</h2>
+        <ul>
+          <li><strong>Responsive model moves</strong> — moving weights now runs in the background with progress. Copies are verified before switching locations, and failed moves keep the original models. Use Default explains recovery when an external drive is disconnected.</li>
+          <li><strong>Cold-start and stop reliability</strong> — captured speech is retained while models finish loading, concurrent model loads are shared, and automatic/manual completion cannot deliver the same dictation twice.</li>
+          <li><strong>Correct microphone audio conversion</strong> — local engines now preserve timing at rates such as 44.1 kHz.</li>
+          <li><strong>Consistent profiles and visible AI failures</strong> — the profile stays fixed throughout dictation, and missing AI credentials produce a warning while retaining the raw text.</li>
+          <li><strong>Storage availability checks</strong> — local model loads validate the selected folder and volume before downloading.</li>
+          <li><strong>C920 input-override test candidate</strong> — input-only device setup, native-format negotiation, and clearer diagnostics. Hardware validation is still needed; the system-default fallback remains available.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Sun, 06 Sep 2026 21:35:51 +0000</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.16.6-beta.2.dmg"
+        length="7788709"
+        type="application/octet-stream"
+        sparkle:edSignature="ZK68WdkPPAiOuDG2SXHSiXhwRDt6Qp+wnFo/+xkK1TpNEAOx45T7wJEwwpeaMnqnkWHrXeK4R4TwnZmvMj8ZAw=="
+      />
+    </item>
+    <item>
       <title>Version 3.16.6 beta 1</title>
       <sparkle:version>108</sparkle:version>
       <sparkle:shortVersionString>3.16.6-beta.1</sparkle:shortVersionString>
