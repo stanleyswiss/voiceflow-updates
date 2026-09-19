@@ -6,6 +6,28 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.16.6 beta 3</title>
+      <sparkle:version>110</sparkle:version>
+      <sparkle:shortVersionString>3.16.6-beta.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <sparkle:channel>beta</sparkle:channel>
+      <description><![CDATA[
+        <h2>Sonotexta 3.16.6 beta 3</h2>
+        <ul>
+          <li><strong>Experimental local Qwen3-ASR</strong> — download and manage the model in Dictation settings, then select it globally or in a profile. Speech is transcribed after you stop recording, with support for 30 languages.</li>
+          <li><strong>Qwen accuracy limitation</strong> — this experimental CoreML conversion can insert extra words, especially around chunk boundaries in longer dictations. Please review its output carefully; Bulgarian is not supported.</li>
+          <li><strong>FaceTime microphone test candidate</strong> — default microphone capture now uses an input-only audio setup to improve compatibility during calls. Live FaceTime and microphone hardware validation are still needed.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Sat, 19 Sep 2026 18:15:05 GMT</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.16.6-beta.3.dmg"
+        length="7697601"
+        type="application/octet-stream"
+        sparkle:edSignature="/D2juOGr65v+2JQ9ISdDUUVAvTFEKdULAQ3LpGBJMoIhb+Yc35BwNd/1HzkZkfMbDCbZ/8nUK0Czf/BTOTH4DQ=="
+      />
+    </item>
+    <item>
       <title>Version 3.16.6 beta 2</title>
       <sparkle:version>109</sparkle:version>
       <sparkle:shortVersionString>3.16.6-beta.2</sparkle:shortVersionString>
