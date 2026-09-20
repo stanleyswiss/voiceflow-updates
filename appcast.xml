@@ -6,6 +6,28 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.16.6 beta 4</title>
+      <sparkle:version>111</sparkle:version>
+      <sparkle:shortVersionString>3.16.6-beta.4</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <sparkle:channel>beta</sparkle:channel>
+      <description><![CDATA[
+        <h2>Sonotexta 3.16.6 beta 4</h2>
+        <ul>
+          <li><strong>FaceTime microphone fix candidate</strong> — Sonotexta now supports the built-in Mac microphone's three-channel call format and selects the strongest real input channel before converting to mono, avoiding speech cancellation during calls.</li>
+          <li><strong>Actionable call-audio diagnostics</strong> — multichannel routes log per-channel signal levels. If a call supplies only digital silence, Sonotexta shows a clear microphone error instead of the generic “No speech detected” message.</li>
+          <li><strong>Live validation requested</strong> — please test FaceTime both unmuted and muted, plus normal dictation outside calls. This remains a beta candidate until that hardware test passes.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Sun, 20 Sep 2026 09:33:33 GMT</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.16.6-beta.4.dmg"
+        length="7709165"
+        type="application/octet-stream"
+        sparkle:edSignature="//yo8C+wx3CRWe9/bVn/fJeVKTgY6sXQ06vL04cp4I2R7KYQjiJOtZfzdCsuPOU+F3982RbOZMXWhmdycTrtDQ=="
+      />
+    </item>
+    <item>
       <title>Version 3.16.6 beta 3</title>
       <sparkle:version>110</sparkle:version>
       <sparkle:shortVersionString>3.16.6-beta.3</sparkle:shortVersionString>
