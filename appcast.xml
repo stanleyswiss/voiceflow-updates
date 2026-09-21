@@ -6,6 +6,34 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 3.16.6</title>
+      <sparkle:version>112</sparkle:version>
+      <sparkle:shortVersionString>3.16.6</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 3.16.6</h2>
+        <p><strong>⚠️ Updating from 3.16.2 or older?</strong> If this update fails with
+        "The update is improperly signed", that is expected — the update signing key was
+        replaced in 3.16.3. Download Sonotexta once from
+        <a href="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.16.6.dmg">this link</a>
+        and drag it into Applications (settings and license are kept). Automatic updates
+        work normally from then on.</p>
+        <ul>
+          <li><strong>FaceTime dictation</strong> — Sonotexta now works alongside FaceTime calls on the built-in Mac microphone, including its three-channel call route.</li>
+          <li><strong>Experimental local Qwen3-ASR</strong> — offline transcription for 30 languages after download. Review longer results carefully; this CoreML conversion can add words near chunk boundaries, and Bulgarian is not supported.</li>
+          <li><strong>Flexible model storage</strong> — move local model weights to another folder or external drive with background progress, verification, and safe rollback on failure.</li>
+          <li><strong>Capture and delivery reliability</strong> — first words survive model warm-up, stop races no longer duplicate delivery, 44.1 kHz microphones convert correctly, and AI/storage failures are visible.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Mon, 21 Sep 2026 08:17:18 GMT</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-3.16.6.dmg"
+        length="7709818"
+        type="application/octet-stream"
+        sparkle:edSignature="n2m3x8VdN+5/B3aZz1HXB0yfktc5udkTH/GJeiwmHih2+dqtDjiTCNyGwo22MgXl9P/3jKRpnWKVgcpM5We2Dg=="
+      />
+    </item>
+    <item>
       <title>Version 3.16.6 beta 4</title>
       <sparkle:version>111</sparkle:version>
       <sparkle:shortVersionString>3.16.6-beta.4</sparkle:shortVersionString>
