@@ -6,6 +6,36 @@
     <description>Sonotexta update feed</description>
     <language>en</language>
     <item>
+      <title>Version 4.0.0</title>
+      <sparkle:version>113</sparkle:version>
+      <sparkle:shortVersionString>4.0.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h2>Sonotexta 4.0 — now free and open source</h2>
+        <p>Sonotexta is now a gift to the community: free for everyone, with the code on
+        <a href="https://github.com/stanleyswiss/Sonotexta">GitHub</a> under the GPL-3.0.</p>
+        <p><strong>⚠️ Updating from 3.16.2 or older?</strong> If this update fails with
+        "The update is improperly signed", that is expected — the update signing key was
+        replaced in 3.16.3. Download Sonotexta once from
+        <a href="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-4.0.0.dmg">this link</a>
+        and drag it into Applications (your settings are kept). Automatic updates
+        work normally from then on.</p>
+        <ul>
+          <li><strong>Every feature unlocked</strong> — cloud engines, AI cleanup, translation and profiles work for everyone with your own API keys, or stay fully on-device. No licence, trial or account.</li>
+          <li><strong>Managed AI and Cloud retired</strong> — if you used them, add your own key in Connections or pick an on-device engine. Sonotexta moves keyless cloud selections back to Apple Speech for you.</li>
+          <li><strong>Open source</strong> — read the code, report issues and send pull requests at github.com/stanleyswiss/Sonotexta.</li>
+          <li><strong>Support it</strong> — if Sonotexta saves you time, <a href="https://buymeacoffee.com/stanelych">buy me a coffee</a>.</li>
+        </ul>
+      ]]></description>
+      <pubDate>Mon, 26 Oct 2026 09:35:37 GMT</pubDate>
+      <enclosure
+        url="https://stanleyswiss.github.io/voiceflow-updates/Sonotexta-4.0.0.dmg"
+        length="7566416"
+        type="application/octet-stream"
+        sparkle:edSignature="imJ5IV7W38cXUvHXJl9x4+ns6rzaTTtpo8udbBZsp7QNJUy1KqEwUVaCwizPmwit4ndTvBt8fXrFo6QtpZQBAw=="
+      />
+    </item>
+    <item>
       <title>Version 3.16.6</title>
       <sparkle:version>112</sparkle:version>
       <sparkle:shortVersionString>3.16.6</sparkle:shortVersionString>
